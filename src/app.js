@@ -150,7 +150,7 @@ function renderPlan() {
 // ── Render Week ──────────────────────────────────────────
 function renderWeek() {
   let html = '';
-  for (let w = 1; w <= 11; w++) {
+  for (let w = 1; w <= 12; w++) {
     if (fWeek !== 0 && fWeek !== w) continue;
     const wp = posts.filter(p => p.week === w);
     if (!wp.length) continue;

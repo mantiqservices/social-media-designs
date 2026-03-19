@@ -5,6 +5,7 @@ const SYS = {
   hr:  { name: 'HR System',       color: '#a78bfa' },
   fin: { name: 'Finance Tracker', color: '#34d399' },
   ac:  { name: 'Academy System',  color: '#CC0028' },
+  gen: { name: 'General Posts',   color: '#facc15' },
 };
 
 const TYPE_AR = {
@@ -21,42 +22,36 @@ const SVG_COPY = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" str
 const SVG_DL   = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7 10l5 5 5-5M3 21h18"/></svg>`;
 
 // ── State ────────────────────────────────────────────────
-let posts   = [];
-let fSys    = 'all';
-let fType   = 'all';
-let fWeek   = 0;
-let fQ      = '';
-let curView = 'grid';
-let editId  = null;
+let posts    = [];
+let fSys     = 'all';
+let fType    = 'all';
+let fWeek    = 0;
+let fQ       = '';
+let curView  = 'grid';
+let editId   = null;
 let dlCancel = false;
 
-// ── Filter test ──────────────────────────────────────────
+// ── Helpers ──────────────────────────────────────────────
+const el = id => document.getElementById(id);
+
 function ok(p) {
   if (fSys  !== 'all' && p.sys  !== fSys)  return false;
   if (fType !== 'all' && p.type !== fType) return false;
   if (fWeek !== 0     && p.week !== fWeek) return false;
   if (fQ) {
     const q = fQ.toLowerCase();
-    if (
-      !p.id.toLowerCase().includes(q) &&
-      !p.ar.toLowerCase().includes(q) &&
-      !p.en.toLowerCase().includes(q)
-    ) return false;
+    if (!p.id.toLowerCase().includes(q) && !p.ar.toLowerCase().includes(q) && !p.en.toLowerCase().includes(q)) return false;
   }
   return true;
 }
 
-// ── Load / save edits from localStorage ─────────────────
 function loadPosts(raw) {
   return raw.map(p => {
     try {
       const saved = localStorage.getItem('mq_' + p.id);
-      return saved
-        ? { platform: 'Instagram', notes: '', ...p, ...JSON.parse(saved) }
-        : { platform: 'Instagram', notes: '', ...p };
-    } catch (e) {
-      return { platform: 'Instagram', notes: '', ...p };
-    }
+      return saved ? { platform: 'Instagram', notes: '', ...p, ...JSON.parse(saved) }
+                   : { platform: 'Instagram', notes: '', ...p };
+    } catch (e) { return { platform: 'Instagram', notes: '', ...p }; }
   });
 }
 
@@ -66,36 +61,43 @@ function savePost(p) {
       week: p.week, day: p.day, time: p.time,
       platform: p.platform, ar: p.ar, en: p.en, notes: p.notes,
     }));
-  } catch (e) { /* storage full */ }
+  } catch (e) {}
 }
 
-// ── Render helpers ───────────────────────────────────────
-function el(id) { return document.getElementById(id); }
-
+let _toastTimer;
 function showToast(msg) {
   const t = el('toast');
   t.textContent = msg;
   t.classList.add('show');
-  clearTimeout(showToast._timer);
-  showToast._timer = setTimeout(() => t.classList.remove('show'), 2000);
+  clearTimeout(_toastTimer);
+  _toastTimer = setTimeout(() => t.classList.remove('show'), 2000);
 }
 
 function copyText(txt) {
   navigator.clipboard.writeText(txt).catch(() => {
     const ta = document.createElement('textarea');
-    ta.value = txt;
-    document.body.appendChild(ta);
-    ta.select();
-    document.execCommand('copy');
-    document.body.removeChild(ta);
+    ta.value = txt; document.body.appendChild(ta);
+    ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
   });
   showToast('📋 تم النسخ!');
+}
+
+// ── Sidebar (mobile) ─────────────────────────────────────
+function openSidebar() {
+  el('sb').classList.add('open');
+  el('sbOverlay').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeSidebar() {
+  el('sb').classList.remove('open');
+  el('sbOverlay').classList.remove('show');
+  document.body.style.overflow = '';
 }
 
 // ── Render Grid ──────────────────────────────────────────
 function renderGrid() {
   el('vGrid').innerHTML = posts.map(p => {
-    const m = SYS[p.sys];
+    const m    = SYS[p.sys] || SYS.crm;
     const hide = ok(p) ? '' : 'hide';
     return `
     <div class="pc ${hide}" data-id="${p.id}">
@@ -118,7 +120,7 @@ function renderGrid() {
 // ── Render Plan ──────────────────────────────────────────
 function renderPlan() {
   el('vPlanBody').innerHTML = posts.map(p => {
-    const m = SYS[p.sys];
+    const m    = SYS[p.sys] || SYS.crm;
     const hide = ok(p) ? '' : 'hide';
     return `
     <tr class="${hide}">
@@ -148,11 +150,11 @@ function renderPlan() {
 // ── Render Week ──────────────────────────────────────────
 function renderWeek() {
   let html = '';
-  for (let w = 1; w <= 10; w++) {
+  for (let w = 1; w <= 11; w++) {
     if (fWeek !== 0 && fWeek !== w) continue;
     const wp = posts.filter(p => p.week === w);
     if (!wp.length) continue;
-    const m   = SYS[wp[0].sys];
+    const m   = SYS[wp[0].sys] || SYS.crm;
     const vis = wp.filter(ok).length;
     html += `
     <div class="wblk">
@@ -163,7 +165,7 @@ function renderWeek() {
       </div>
       <div class="wgrid">
         ${wp.map(p => {
-          const pm = SYS[p.sys];
+          const pm = SYS[p.sys] || SYS.crm;
           return `
           <div class="wcard ${ok(p) ? '' : 'hide'}" data-action="preview" data-id="${p.id}">
             <div class="wimg"><img src="${p.img}" loading="lazy" alt=""></div>
@@ -185,6 +187,15 @@ function switchView(v) {
   el('vGrid').style.display = v === 'grid' ? 'grid'  : 'none';
   el('vPlan').style.display = v === 'plan' ? 'block' : 'none';
   el('vWeek').style.display = v === 'week' ? 'block' : 'none';
+
+  // Sync top tabs
+  document.querySelectorAll('.vtab').forEach(b => {
+    b.classList.toggle('on', b.dataset.v === v);
+  });
+  // Sync bottom tabs
+  document.querySelectorAll('.mtab').forEach(b => {
+    b.classList.toggle('on', b.dataset.v === v);
+  });
 }
 
 // ── Full render ──────────────────────────────────────────
@@ -197,41 +208,37 @@ function render() {
   else renderWeek();
 }
 
-// ── Preview modal ────────────────────────────────────────
+// ── Preview ──────────────────────────────────────────────
 function openPreview(id) {
   const p = posts.find(x => x.id === id);
   if (!p) return;
-  el('mPrevImg').src      = p.img;
-  el('mPrevDL').href      = p.img;
-  el('mPrevDL').download  = p.id + '.png';
+  el('mPrevImg').src     = p.img;
+  el('mPrevDL').href     = p.img;
+  el('mPrevDL').download = p.id + '.png';
   el('mPrev').classList.add('open');
 }
-function closePreview() {
-  el('mPrev').classList.remove('open');
-}
+function closePreview() { el('mPrev').classList.remove('open'); }
 
-// ── Edit modal ───────────────────────────────────────────
+// ── Edit ─────────────────────────────────────────────────
 function openEdit(id) {
   editId = id;
   const p = posts.find(x => x.id === id);
   if (!p) return;
-  const m = SYS[p.sys];
-  el('eThumb').src         = p.img;
-  el('eID').textContent    = p.id;
-  el('eSys').textContent   = m.name;
-  el('eSys').style.color   = m.color;
-  el('eWeek').value        = String(p.week);
-  el('eDay').value         = p.day;
-  el('eTime').value        = p.time || '09:00';
-  el('ePlat').value        = p.platform || 'Instagram';
-  el('eAR').value          = p.ar;
-  el('eEN').value          = p.en;
-  el('eNotes').value       = p.notes || '';
+  const m = SYS[p.sys] || SYS.crm;
+  el('eThumb').src       = p.img;
+  el('eID').textContent  = p.id;
+  el('eSys').textContent = m.name;
+  el('eSys').style.color = m.color;
+  el('eWeek').value      = String(p.week);
+  el('eDay').value       = p.day;
+  el('eTime').value      = p.time || '09:00';
+  el('ePlat').value      = p.platform || 'Instagram';
+  el('eAR').value        = p.ar;
+  el('eEN').value        = p.en;
+  el('eNotes').value     = p.notes || '';
   el('mEdit').classList.add('open');
 }
-function closeEdit() {
-  el('mEdit').classList.remove('open');
-}
+function closeEdit() { el('mEdit').classList.remove('open'); }
 function saveEdit() {
   const p = posts.find(x => x.id === editId);
   if (!p) return;
@@ -253,54 +260,48 @@ async function downloadAll() {
   const visible = posts.filter(ok);
   dlCancel = false;
   el('mDL').classList.add('open');
-
   for (let i = 0; i < visible.length; i++) {
     if (dlCancel) break;
     const p = visible[i];
     el('dlName').textContent = p.id;
     el('dlPct').textContent  = `${i + 1} / ${visible.length}`;
     el('dlBar').style.width  = `${((i + 1) / visible.length) * 100}%`;
-
-    // Fetch image and trigger download
     try {
       const res  = await fetch(p.img);
       const blob = await res.blob();
       const url  = URL.createObjectURL(blob);
       const a    = document.createElement('a');
-      a.href     = url;
-      a.download = p.id + '.png';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    } catch (e) { /* skip */ }
-
-    await new Promise(r => setTimeout(r, 220));
+      a.href = url; a.download = p.id + '.png';
+      document.body.appendChild(a); a.click();
+      document.body.removeChild(a); URL.revokeObjectURL(url);
+    } catch (e) {}
+    await new Promise(r => setTimeout(r, 200));
   }
   el('mDL').classList.remove('open');
 }
 
-// ── Event delegation (one listener per container) ────────
-function delegateClicks(root, selector, handler) {
-  root.addEventListener('click', e => {
-    const target = e.target.closest(selector);
-    if (target && root.contains(target)) handler(target, e);
-  });
-}
-
-// ── Boot ─────────────────────────────────────────────────
+// ── Init ─────────────────────────────────────────────────
 export function initApp(rawPosts) {
   posts = loadPosts(rawPosts);
 
-  // Initial render
   switchView('grid');
   render();
 
-  // ── View tab clicks ──────────────────────────────────
+  // ── Mobile sidebar toggle ────────────────────────────
+  el('menuToggle').addEventListener('click', openSidebar);
+  el('sbOverlay').addEventListener('click',  closeSidebar);
+
+  // ── View tabs (top nav) ──────────────────────────────
   document.querySelectorAll('.vtab').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.vtab').forEach(b => b.classList.remove('on'));
-      btn.classList.add('on');
+      switchView(btn.dataset.v);
+      render();
+    });
+  });
+
+  // ── View tabs (mobile bottom bar) ────────────────────
+  document.querySelectorAll('.mtab').forEach(btn => {
+    btn.addEventListener('click', () => {
       switchView(btn.dataset.v);
       render();
     });
@@ -312,6 +313,7 @@ export function initApp(rawPosts) {
       document.querySelectorAll('[data-sys]').forEach(b => b.classList.remove('on'));
       btn.classList.add('on');
       fSys = btn.dataset.sys;
+      closeSidebar();
       render();
     });
   });
@@ -322,6 +324,7 @@ export function initApp(rawPosts) {
       document.querySelectorAll('[data-tp]').forEach(b => b.classList.remove('on'));
       btn.classList.add('on');
       fType = btn.dataset.tp;
+      closeSidebar();
       render();
     });
   });
@@ -332,6 +335,7 @@ export function initApp(rawPosts) {
       document.querySelectorAll('[data-wk]').forEach(b => b.classList.remove('on'));
       btn.classList.add('on');
       fWeek = parseInt(btn.dataset.wk);
+      closeSidebar();
       render();
     });
   });
@@ -342,8 +346,8 @@ export function initApp(rawPosts) {
     render();
   });
 
-  // ── Content area: delegated clicks ──────────────────
-  document.getElementById('cnt').addEventListener('click', e => {
+  // ── Content clicks (delegated) ───────────────────────
+  el('cnt').addEventListener('click', e => {
     const btn = e.target.closest('[data-action]');
     if (!btn) return;
     const { action, id } = btn.dataset;
@@ -353,17 +357,15 @@ export function initApp(rawPosts) {
     if (action === 'copy-en') { const p = posts.find(x => x.id === id); if (p) copyText(p.en); }
   });
 
-  // ── Preview modal ────────────────────────────────────
+  // ── Modals ───────────────────────────────────────────
   el('btnClosePrev').addEventListener('click', closePreview);
   el('mPrev').addEventListener('click', e => { if (e.target === el('mPrev')) closePreview(); });
 
-  // ── Edit modal ───────────────────────────────────────
   el('btnCloseEdit').addEventListener('click',  closeEdit);
   el('btnCancelEdit').addEventListener('click', closeEdit);
   el('btnSaveEdit').addEventListener('click',   saveEdit);
   el('mEdit').addEventListener('click', e => { if (e.target === el('mEdit')) closeEdit(); });
 
-  // Copy buttons inside edit modal
   el('cpAR').addEventListener('click', () => copyText(el('eAR').value));
   el('cpEN').addEventListener('click', () => copyText(el('eEN').value));
 
@@ -376,6 +378,6 @@ export function initApp(rawPosts) {
 
   // ── Keyboard ─────────────────────────────────────────
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') { closePreview(); closeEdit(); }
+    if (e.key === 'Escape') { closePreview(); closeEdit(); closeSidebar(); }
   });
 }

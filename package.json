@@ -1,7 +1,7 @@
 {
   "name": "mantiq-content-planner",
   "version": "1.0.0",
-  "description": "MANTIQ Social Media Content Planner",
+  "description": "MANTIQ Content Plan",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

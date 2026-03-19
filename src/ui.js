@@ -43,7 +43,7 @@ export function buildUI() {
     <div id="sb">
       <div class="sb-sec">
         <span class="sb-lbl">النظام</span>
-        <button class="sbtn on" data-sys="all"><div class="sdot" style="background:var(--crm)"></div>كل الأنظمة<span class="scnt" id="cnt-all">54</span></button>
+        <button class="sbtn on" data-sys="all"><div class="sdot" style="background:var(--crm)"></div>كل الأنظمة<span class="scnt" id="cnt-all">48</span></button>
         <button class="sbtn s-crm" data-sys="crm"><div class="sdot" style="background:var(--crm)"></div>CRM Tracker<span class="scnt">10</span></button>
         <button class="sbtn s-sls" data-sys="sls"><div class="sdot" style="background:var(--sls)"></div>Sales Tracker<span class="scnt">10</span></button>
         <button class="sbtn s-hr"  data-sys="hr" ><div class="sdot" style="background:var(--hr)"></div>HR System<span class="scnt">10</span></button>
@@ -69,27 +69,28 @@ export function buildUI() {
       <div class="sb-sec">
         <span class="sb-lbl">الأسبوع</span>
         <button class="sbtn on" data-wk="0">📅 كل الأسابيع</button>
-        <button class="sbtn" data-wk="1">الأسبوع ١ — CRM</button>
-        <button class="sbtn" data-wk="2">الأسبوع ٢ — CRM</button>
-        <button class="sbtn" data-wk="3">الأسبوع ٣ — Sales</button>
-        <button class="sbtn" data-wk="4">الأسبوع ٤ — Sales</button>
-        <button class="sbtn" data-wk="5">الأسبوع ٥ — HR</button>
-        <button class="sbtn" data-wk="6">الأسبوع ٦ — HR</button>
-        <button class="sbtn" data-wk="7">الأسبوع ٧ — Finance</button>
-        <button class="sbtn" data-wk="8">الأسبوع ٨ — Finance</button>
-        <button class="sbtn" data-wk="9">الأسبوع ٩ — Academy</button>
-        <button class="sbtn" data-wk="10">الأسبوع ١٠ — Academy</button>
-        <button class="sbtn" data-wk="11">الأسبوع ١١ — General</button>
+        <button class="sbtn" data-wk="1">أسبوع ١ — Pain Points</button>
+        <button class="sbtn" data-wk="2">أسبوع ٢ — Pain Points</button>
+        <button class="sbtn" data-wk="3">أسبوع ٣ — Pain Points</button>
+        <button class="sbtn" data-wk="4">أسبوع ٤ — CRM Before/After</button>
+        <button class="sbtn" data-wk="5">أسبوع ٥ — Sales Before/After</button>
+        <button class="sbtn" data-wk="6">أسبوع ٦ — HR Before/After</button>
+        <button class="sbtn" data-wk="7">أسبوع ٧ — Finance Before/After</button>
+        <button class="sbtn" data-wk="8">أسبوع ٨ — Product Deep Dive</button>
+        <button class="sbtn" data-wk="9">أسبوع ٩ — Product Deep Dive</button>
+        <button class="sbtn" data-wk="10">أسبوع ١٠ — Product Deep Dive</button>
+        <button class="sbtn" data-wk="11">أسبوع ١١ — Social Proof</button>
+        <button class="sbtn" data-wk="12">أسبوع ١٢ — CTA</button>
       </div>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="cnt">
       <div class="stats">
-        <div class="scard"><div class="sdotb" style="background:var(--crm)"></div><div><div class="sval" id="stot">54</div><div class="slbl">تصميم ظاهر</div></div></div>
-        <div class="scard"><div class="sdotb" style="background:var(--sls)"></div><div><div class="sval">11</div><div class="slbl">أسابيع</div></div></div>
-        <div class="scard"><div class="sdotb" style="background:var(--hr)"></div><div><div class="sval">6</div><div class="slbl">أنظمة</div></div></div>
-        <div class="scard"><div class="sdotb" style="background:var(--fin)"></div><div><div class="sval">108</div><div class="slbl">كابشن AR + EN</div></div></div>
+        <div class="scard"><div class="sdotb" style="background:var(--crm)"></div><div><div class="sval" id="stot">48</div><div class="slbl">تصميم ظاهر</div></div></div>
+        <div class="scard"><div class="sdotb" style="background:var(--sls)"></div><div><div class="sval">12</div><div class="slbl">أسبوع</div></div></div>
+        <div class="scard"><div class="sdotb" style="background:var(--hr)"></div><div><div class="sval">4</div><div class="slbl">مراحل</div></div></div>
+        <div class="scard"><div class="sdotb" style="background:var(--fin)"></div><div><div class="sval">96</div><div class="slbl">كابشن AR + EN</div></div></div>
       </div>
 
       <div id="vGrid"></div>
@@ -139,7 +140,7 @@ export function buildUI() {
         <div class="fld">
           <label>الأسبوع</label>
           <select id="eWeek">
-            ${[1,2,3,4,5,6,7,8,9,10,11].map(n=>`<option value="${n}">الأسبوع ${n}</option>`).join('')}
+            ${[1,2,3,4,5,6,7,8,9,10,11,12].map(n=>`<option value="${n}">الأسبوع ${n}</option>`).join('')}
           </select>
         </div>
         <div class="fld">

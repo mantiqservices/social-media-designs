@@ -648,5 +648,57 @@ export const POSTS = [
     "ar": "📊 ٣١٢ طالب — مُدارون باحترافية\n\n✅ ٩١٪ معدل حضور\n✅ ٢٤ معلم نشط\n✅ ١٨٦ ألف جنيه شهرياً\n✅ ٤ صفوف دراسية\n\nكل ده بنظام أكاديمي واحد من منطق.\n\nعايز تجربة مجانية؟ تواصل معنا 👇\n\n#منطق #أكاديمية #نتائج #مصر",
     "en": "📊 312 students — managed professionally\n\n✅ 91% attendance rate\n✅ 24 active teachers\n✅ 186K EGP monthly revenue\n✅ 4 class years\n\nAll with one MANTIQ Academy system.\n\nWant a free trial? Contact us 👇\n\n#MANTIQ #Academy #Results #Egypt",
     "img": "/images/50_ac_feat2.png"
+  },
+  {
+    "id": "gen_01",
+    "sys": "gen",
+    "type": "features",
+    "week": 11,
+    "day": "السبت",
+    "time": "09:00",
+    "platform": "Instagram",
+    "notes": "منشور عام عن المنصة",
+    "img": "/images/09_crm_feat1.png",
+    "ar": "🚀 منطق — نظام الأعمال المصري الأول\n\nكل أنظمة شركتك في مكان واحد:\n🔵 CRM — إدارة العملاء\n🟠 Sales — المبيعات\n🟣 HR — الموارد البشرية\n🟢 Finance — المحاسبة\n🔴 Academy — المراكز التعليمية\n\n📲 ابدأ تجربتك المجانية من اللينك في البايو\n\n#منطق #برنامج_محاسبة #إدارة_أعمال #مصر #ERP",
+    "en": "🚀 MANTIQ — Egypt's #1 Business System\n\nAll your business systems in one place:\n🔵 CRM — Client Management\n🟠 Sales — Sales Tracking\n🟣 HR — Human Resources\n🟢 Finance — Accounting\n🔴 Academy — Educational Centers\n\n📲 Start your free trial — link in bio\n\n#MANTIQ #BusinessSoftware #Egypt #ERP"
+  },
+  {
+    "id": "gen_02",
+    "sys": "gen",
+    "type": "qa",
+    "week": 11,
+    "day": "الاثنين",
+    "time": "12:00",
+    "platform": "Facebook",
+    "notes": "منشور سؤال عام",
+    "img": "/images/03_crm_qa1.png",
+    "ar": "❓ بتدير شركتك إزاي؟\n\nكتير من أصحاب الشركات في مصر لسه بيستخدموا:\n❌ Excel للمحاسبة\n❌ WhatsApp لمتابعة العملاء\n❌ ورق لمسير الرواتب\n\nفي طريقة أحسن.\n\nمنطق — نظام واحد بيحل كل المشاكل دي.\n\n💬 قولنا — أكتر مشكلة بتواجهها في إدارة شركتك؟\n\n#منطق #إدارة_أعمال #مصر #تحول_رقمي",
+    "en": "❓ How do you manage your business?\n\nMany Egyptian business owners still use:\n❌ Excel for accounting\n❌ WhatsApp for client follow-up\n❌ Paper for payroll\n\nThere's a better way.\n\nMANTIQ — one system that solves all of this.\n\n💬 Tell us — what's your biggest business challenge?\n\n#MANTIQ #BusinessManagement #Egypt #DigitalTransformation"
+  },
+  {
+    "id": "gen_03",
+    "sys": "gen",
+    "type": "features",
+    "week": 11,
+    "day": "الأربعاء",
+    "time": "18:00",
+    "platform": "LinkedIn",
+    "notes": "منشور مميزات عامة",
+    "img": "/images/19_sls_feat1.png",
+    "ar": "⚡ ليه منطق؟\n\n• نظام سحابي — اشتغل من أي مكان\n• واجهة عربية بالكامل\n• دعم فني مصري\n• تحديثات مستمرة مجاناً\n• تكامل بين كل الأنظمة\n• تقارير PDF و Excel\n• صلاحيات مخصصة لكل مستخدم\n• بيانات آمنة ومحمية\n\nمنطق مش بس برنامج — ده شريك نجاحك.\n\n#منطق #SaaS #تحول_رقمي #مصر",
+    "en": "⚡ Why MANTIQ?\n\n• Cloud-based — work from anywhere\n• Fully Arabic interface\n• Egyptian support team\n• Free continuous updates\n• Full system integration\n• PDF & Excel reports\n• Custom user permissions\n• Secure data protection\n\nMANTIQ isn't just software — it's your business partner.\n\n#MANTIQ #SaaS #DigitalTransformation #Egypt"
+  },
+  {
+    "id": "gen_04",
+    "sys": "gen",
+    "type": "qa",
+    "week": 11,
+    "day": "الجمعة",
+    "time": "15:00",
+    "platform": "Facebook",
+    "notes": "منشور سؤال عام ٢",
+    "img": "/images/28_hr_qa2.png",
+    "ar": "❓ كام وقت بتضيع كل أسبوع في أعمال إدارية؟\n\nأصحاب الشركات الصغيرة والمتوسطة بيضيعوا أكتر من ١٠ ساعات أسبوعياً في:\n📊 تقارير يدوية\n📋 مسير رواتب\n📞 متابعة العملاء\n📁 أرشفة الملفات\n\nمنطق بيوفرلك الوقت ده عشان تركز على تنمية شركتك.\n\n💬 قولنا — بتضيع قد إيه من وقتك في ده؟\n\n#منطق #إنتاجية #إدارة_أعمال #مصر",
+    "en": "❓ How many hours a week do you waste on admin?\n\nSME owners waste 10+ hours weekly on:\n📊 Manual reports\n📋 Payroll processing\n📞 Client follow-ups\n📁 File archiving\n\nMANTIQ saves you that time to focus on growth.\n\n💬 Tell us — how much time do you spend on admin?\n\n#MANTIQ #Productivity #BusinessManagement #Egypt"
   }
 ];

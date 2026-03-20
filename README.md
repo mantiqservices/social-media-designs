@@ -40,7 +40,7 @@ mantiq-planner/
 ├── vercel.json         # Vercel routing
 ├── package.json
 ├── public/
-│   ├── images/         # 50 post PNGs (1080×1080)
+│   ├── imagess/         # 50 post PNGs (1080×1080)
 │   └── favicon.svg
 └── src/
     ├── main.js         # Entry

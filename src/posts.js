@@ -7,7 +7,7 @@ export const POSTS = [
     "day": "السبت",
     "time": "09:00",
     "platform": "Facebook",
-    "img": "/images/03_crm_qa1.png",
+    "img": "/imagess/03_crm_qa1.png",
     "ar": "😤 بتعمل اى فلمرتبات كل شهر؟\n\nلو إجابتك \"Excel\" أو \"يدوي\" —\nده مش مشكلتك إنت، ده نظام قديم بيكلفك وقت ومجهود كل شهر.\n\nأصحاب الشركات في مصر بيضيعوا في المتوسط:\n⏰ ٤–٦ ساعات في مسير الرواتب\n⏰ ٣–٤ ساعات في متابعة العملاء\n⏰ ٢–٣ ساعات في إعداد التقارير\n\n= ١٠+ ساعة أسبوعياً على أعمال إدارية مش على النمو.\n\n💬 قولنا في الكومنتات — أكتر حاجة بتاخد منك وقت في الإدارة؟\n\n#إدارة_أعمال #مصر #أصحاب_الشركات",
     "en": "😤 How do you run payroll every month?\n\nIf your answer is \"Excel\" or \"manually\" —\nThat's not your fault, it's an outdated system costing you time every month.\n\nEgyptian business owners waste on average:\n⏰ 4–6 hours on payroll\n⏰ 3–4 hours on client follow-up\n⏰ 2–3 hours on report preparation\n\n= 10+ hours weekly on admin instead of growth.\n\n💬 Tell us in the comments — what admin task takes most of your time?\n\n#BusinessManagement #Egypt #Entrepreneurs"
   },
@@ -19,7 +19,7 @@ export const POSTS = [
     "day": "الاثنين",
     "time": "19:00",
     "platform": "LinkedIn",
-    "img": "/images/08_crm_qa2.png",
+    "img": "/imagess/08_crm_qa2.png",
     "ar": "الفرق بين شركتين — نفس الحجم، نتائج مختلفة تماماً.\n\nشركة A:\n❌ بيتابعوا العملاء على WhatsApp\n❌ الرواتب على Excel\n❌ التقارير بتتعمل آخر الشهر بالتخمين\n❌ مفيش رؤية واضحة للإيراد\n\nشركة B:\n✅ كل عميل ليه ملف وتاريخ كامل\n✅ الرواتب بتتحسب تلقائي\n✅ التقارير متاحة في أي لحظة\n✅ القرارات مبنية على أرقام حقيقية\n\nالفرق مش في الميزانية — الفرق في النظام.\n\nأنت في الفريق إيه؟ A ولا B؟\n\n#إدارة_أعمال #تحول_رقمي #مصر",
     "en": "Two companies — same size, completely different results.\n\nCompany A:\n❌ Following up with clients on WhatsApp\n❌ Payroll on Excel\n❌ Reports made at month-end by guesswork\n❌ No clear revenue visibility\n\nCompany B:\n✅ Every client has a full file and history\n✅ Payroll calculated automatically\n✅ Reports available at any moment\n✅ Decisions based on real numbers\n\nThe difference isn't budget — it's the system.\n\nWhich team are you on? A or B?\n\n#BusinessManagement #DigitalTransformation #Egypt"
   },
@@ -31,7 +31,7 @@ export const POSTS = [
     "day": "الأربعاء",
     "time": "18:00",
     "platform": "Facebook",
-    "img": "/images/13_sls_qa1.png",
+    "img": "/imagess/13_sls_qa1.png",
     "ar": "❓ كام صفقة ضاعت منك السنة الفاتت ؟\n\nمش لازم تعرف الرقم بالظبط — بس فكر:\n\nكام مرة قلت \"لازم أتابع مع العميل ده\" وبعدين نسيت؟\n\nكام مرة اكتشفت إن منافس خطف عميل كنت شاغل بيه؟\n\nكام مرة اتأخر عرض السعر وخسرت الصفقة؟\n\nالمشكلة مش في الفريق — المشكلة إن الذاكرة البشرية مش نظام.\n\n💬 شارك تجربتك — حصل معاك حاجة زي دي؟\n\n#مبيعات #إدارة_أعمال #مصر",
     "en": "❓ How many deals did you lose last year?\n\nYou don't need to know the exact number — just think:\n\nHow many times did you say \"I need to follow up with this client\" and then forgot?\n\nHow many times did a competitor steal a client you were busy with?\n\nHow many times did a late quote cost you a deal?\n\nThe problem isn't the team — the problem is that human memory isn't a system.\n\n💬 Share your experience — has this happened to you?\n\n#Sales #BusinessManagement #Egypt"
   },
@@ -43,7 +43,7 @@ export const POSTS = [
     "day": "الجمعة",
     "time": "15:00",
     "platform": "Facebook",
-    "img": "/images/18_sls_qa2.png",
+    "img": "/imagess/18_sls_qa2.png",
     "ar": "بصراحة — أنت عارف شركتك بتكسب كام دلوقتي؟\n\nمش آخر الشهر.\nمش لما المحاسب يعمل التقرير.\n\nدلوقتي — في اللحظة دي.\n\nلو إجابتك \"لأ\" أو \"تقريباً\" —\nده معناه إنك بتاخد قرارات في الضلام.\n\n٧٣٪ من أصحاب الشركات الصغيرة والمتوسطة في مصر مش عندهم رؤية مالية لحظية.\n\nوالنتيجة؟ مفاجآت آخر الشهر.\n\n💬 إيه أكتر مفاجأة مالية واجهتها في شركتك؟\n\n#مالية #إدارة_أعمال #مصر",
     "en": "Honestly — do you know what your company is making right now?\n\nNot at month-end.\nNot when the accountant makes the report.\n\nRight now — at this moment.\n\nIf your answer is \"no\" or \"roughly\" —\nThat means you're making decisions in the dark.\n\n73% of SME owners in Egypt don't have real-time financial visibility.\n\nThe result? End-of-month surprises.\n\n💬 What's the biggest financial surprise you've faced in your business?\n\n#Finance #BusinessManagement #Egypt"
   },
@@ -55,7 +55,7 @@ export const POSTS = [
     "day": "السبت",
     "time": "09:00",
     "platform": "Facebook",
-    "img": "/images/23_hr_qa1.png",
+    "img": "/imagess/23_hr_qa1.png",
     "ar": "سؤال لأصحاب الشركات:\n\nلو واحد من موظفيك سابك النهارده —\nقد إيه هيكلفك؟\n\nالحسابات بتقول:\n💸 تكلفة التوظيف الجديد: ٢–٣ شهر راتب\n💸 وقت التدريب: ٣–٦ شهور عشان يوصل لنفس الكفاءة\n💸 الإنتاجية المفقودة: ٢٥٪ أقل في الفترة دي\n\nيعني موظف براتب ١٠ ألف جنيه —\nتكلفة استبداله ممكن توصل لـ ٦٠–٨٠ ألف جنيه.\n\nالسؤال مش \"إزاي أوفر في الرواتب؟\"\nالسؤال الصح: \"إزاي أخلي فريقي مش عايز يمشي؟\"\n\n💬 إيه أكتر حاجة بتخلي الموظف يفضل في شركتك؟\n\n#موارد_بشرية #إدارة_أعمال #مصر",
     "en": "A question for business owners:\n\nIf one of your employees quit today —\nhow much would it cost you?\n\nThe numbers say:\n💸 New hiring cost: 2–3 months salary\n💸 Training time: 3–6 months to reach same efficiency\n💸 Lost productivity: 25% less during this period\n\nMeaning an employee on 10K EGP salary —\nreplacement could cost 60–80K EGP.\n\nThe question isn't \"how do I save on salaries?\"\nThe right question: \"how do I make my team not want to leave?\"\n\n💬 What's the #1 thing that makes employees stay at your company?\n\n#HumanResources #BusinessManagement #Egypt"
   },
@@ -67,7 +67,7 @@ export const POSTS = [
     "day": "الاثنين",
     "time": "19:00",
     "platform": "LinkedIn",
-    "img": "/images/28_hr_qa2.png",
+    "img": "/imagess/28_hr_qa2.png",
     "ar": "٣ أسئلة كل مدير HR في مصر لازم يعرف إجابتهم:\n\n١. مين أكتر موظف عنده غياب متكرر؟\n٢. إيه الأقسام اللي فيها turnover عالي؟\n٣. مين موظفيك اللي أداؤهم نزل في آخر ٣ شهور؟\n\nلو بتاخد وقت عشان تجاوب على الأسئلة دي —\nيعني بياناتك مش جاهزة لما تحتاجها.\n\nقرارات الـ HR المبنية على بيانات بتوفر في المتوسط:\n✅ ٢٣٪ تقليل في turnover\n✅ ١٨٪ تحسن في الإنتاجية\n✅ ٣٥٪ توفير في تكاليف التوظيف\n\n💬 إيه أصعب قرار HR اتخذته بدون بيانات كافية؟\n\n#موارد_بشرية #HR #مصر",
     "en": "3 questions every HR manager in Egypt should know the answers to:\n\n1. Who has the most recurring absences?\n2. Which departments have high turnover?\n3. Which employees had declining performance in the last 3 months?\n\nIf it takes you time to answer these —\nyour data isn't ready when you need it.\n\nData-driven HR decisions save on average:\n✅ 23% reduction in turnover\n✅ 18% improvement in productivity\n✅ 35% savings in hiring costs\n\n💬 What's the hardest HR decision you've made without enough data?\n\n#HumanResources #HR #Egypt"
   },
@@ -79,7 +79,7 @@ export const POSTS = [
     "day": "الأربعاء",
     "time": "18:00",
     "platform": "Facebook",
-    "img": "/images/33_fin_qa1.png",
+    "img": "/imagess/33_fin_qa1.png",
     "ar": "قصة حقيقية من السوق المصري:\n\nصاحب شركة مقاولات، ٤٥ موظف.\nالشغل كتير، العقود تمام، العملاء راضيين.\n\nبعدين فجأة — مفيش فلوس في البنك.\n\nليه؟\n\nعشان الإيراد كان بييجي، بس:\n❌ الفواتير المتأخرة كانت ٨٠٠ ألف جنيه\n❌ المصاريف الثابتة زادت بدون ما يلاحظ\n❌ مفيش تدفق نقدي متتبع\n\n\"الشغل تمام\" مش بالضرورة معناه \"الفلوس تمام.\"\n\n💬 عندك نظام لمتابعة التدفق النقدي؟ ولا بتعرف الوضع آخر الشهر بس؟\n\n#مالية #تدفق_نقدي #مصر",
     "en": "A real story from the Egyptian market:\n\nA construction company owner, 45 employees.\nLots of work, good contracts, satisfied clients.\n\nThen suddenly — no money in the bank.\n\nWhy?\n\nBecause revenue was coming in, but:\n❌ Overdue invoices were 800K EGP\n❌ Fixed expenses grew without him noticing\n❌ No cash flow being tracked\n\n\"Business is good\" doesn't necessarily mean \"cash is good.\"\n\n💬 Do you have a system to track cash flow? Or do you only know the situation at month-end?\n\n#Finance #CashFlow #Egypt"
   },
@@ -91,7 +91,7 @@ export const POSTS = [
     "day": "الجمعة",
     "time": "15:00",
     "platform": "Facebook",
-    "img": "/images/38_fin_qa2.png",
+    "img": "/imagess/38_fin_qa2.png",
     "ar": "الـ Excel مش أداة محاسبة — وده مش رأيي.\n\nده رأي كل محاسب قانوني جد في مصر.\n\nليه؟\n\n❌ مفيش audit trail — تقدر تغير أي رقم من غير ما حد يعرف\n❌ Human error — خطأ في خلية بتأثر على التقرير كله\n❌ مفيش تحكم في الصلاحيات\n❌ مش جاهز للتدقيق الضريبي\n\nمش بقول Excel وحش — بقول إن فيه أدوات اتصممت خصيصاً للمحاسبة وبتعمل الشغل أحسن.\n\n💬 لسه بتستخدم Excel في المحاسبة؟ إيه السبب؟\n\n#محاسبة #مصر #إدارة_أعمال",
     "en": "Excel is not an accounting tool — and that's not my opinion.\n\nThat's the opinion of every serious CPA in Egypt.\n\nWhy?\n\n❌ No audit trail — anyone can change numbers without a trace\n❌ Human error — one cell error affects the entire report\n❌ No access control\n❌ Not ready for tax audit\n\nI'm not saying Excel is bad — I'm saying there are tools designed specifically for accounting that do the job better.\n\n💬 Still using Excel for accounting? What's the reason?\n\n#Accounting #Egypt #BusinessManagement"
   },
@@ -103,7 +103,7 @@ export const POSTS = [
     "day": "السبت",
     "time": "09:00",
     "platform": "Facebook",
-    "img": "/images/43_ac_qa1.png",
+    "img": "/imagess/43_ac_qa1.png",
     "ar": "لو عندك مركز تعليمي — سؤال مهم:\n\nولي الأمر اتصل بيك دلوقتي وسألك:\n\"ابني جه المدرسة النهارده؟\"\n\nقد إيه هتاخد عشان تجاوبه؟\n\nلو الإجابة أكتر من ١٠ ثواني —\nفي مشكلة في نظام بياناتك.\n\nفي عالم إيه ولي أمر بيدفع رسوم كل شهر —\nومحتاج ينتظر عشان يعرف حضور ابنه؟\n\n💬 ولي أمر أو صاحب مركز — شاركنا تجربتك.\n\n#تعليم #مراكز_تعليمية #مصر",
     "en": "If you have an educational center — an important question:\n\nA parent calls you right now and asks:\n\"Did my child come to school today?\"\n\nHow long will it take you to answer?\n\nIf the answer is more than 10 seconds —\nthere's a problem with your data system.\n\nIn what world does a parent paying fees every month —\nhave to wait to know their child's attendance?\n\n💬 Parent or center owner — share your experience.\n\n#Education #EducationalCenters #Egypt"
   },
@@ -115,7 +115,7 @@ export const POSTS = [
     "day": "الاثنين",
     "time": "19:00",
     "platform": "LinkedIn",
-    "img": "/images/48_ac_qa2.png",
+    "img": "/imagess/48_ac_qa2.png",
     "ar": "حقيقة مؤلمة عن المراكز التعليمية في مصر:\n\n٦٨٪ من أصحاب المراكز التعليمية مش عارفين:\n- الطالب اللي هيفضل والطالب اللي هيسيب\n- إيه الكورسات الأكثر إيراداً\n- مين المعلم اللي بيأثر على الاحتفاظ بالطلاب\n\nمش عشان مش ذكيين —\nعشان البيانات موزعة على WhatsApp وأوراق وشيتات.\n\nالمركز اللي بيدار بالبيانات بيحقق:\n📈 ٣٠٪ أكثر في الاحتفاظ بالطلاب\n📈 ٢٥٪ نمو في الإيراد السنوي\n\n💬 صاحب مركز؟ إزاي بتاخد قراراتك دلوقتي؟\n\n#تعليم #إدارة_أعمال #مصر",
     "en": "A painful truth about educational centers in Egypt:\n\n68% of educational center owners don't know:\n- Which students will stay and which will leave\n- Which courses generate the most revenue\n- Which teacher impacts student retention most\n\nNot because they're not smart —\nbecause data is scattered across WhatsApp, papers, and sheets.\n\nData-driven centers achieve:\n📈 30% more student retention\n📈 25% annual revenue growth\n\n💬 Center owner? How do you make decisions currently?\n\n#Education #BusinessManagement #Egypt"
   },
@@ -127,7 +127,7 @@ export const POSTS = [
     "day": "الأربعاء",
     "time": "18:00",
     "platform": "Facebook",
-    "img": "/images/03_crm_qa1.png",
+    "img": "/imagess/03_crm_qa1.png",
     "ar": "التحول الرقمي مش ترف — بقى ضرورة.\n\nبس خليني أكون صريح معاك:\n\nالتحول الرقمي مش معناه:\n❌ تشتري أغلى برنامج في السوق\n❌ تغير كل حاجة في يوم واحد\n❌ تحتاج فريق IT كامل\n\nمعناه:\n✅ تبدأ بحل المشكلة اللي بتوجعك أكتر\n✅ تشتغل بنظام بيناسب حجم شركتك\n✅ تقيس النتائج وتكمل خطوة خطوة\n\nالشركات اللي بدأت التحول الرقمي في مصر — حتى لو بخطوة صغيرة — بتنمو أسرع بـ ٢.٣x من اللي مش بادية.\n\n💬 إيه أول خطوة رقمية عملتها في شركتك؟\n\n#تحول_رقمي #مصر #إدارة_أعمال",
     "en": "Digital transformation isn't a luxury — it's become a necessity.\n\nBut let me be honest with you:\n\nDigital transformation doesn't mean:\n❌ Buy the most expensive software on the market\n❌ Change everything in one day\n❌ Need a full IT team\n\nIt means:\n✅ Start by solving your biggest pain point\n✅ Work with a system that fits your company size\n✅ Measure results and move step by step\n\nCompanies that started digital transformation in Egypt — even with a small step — grow 2.3x faster than those who haven't started.\n\n💬 What was the first digital step you took in your business?\n\n#DigitalTransformation #Egypt #BusinessManagement"
   },
@@ -139,7 +139,7 @@ export const POSTS = [
     "day": "الجمعة",
     "time": "15:00",
     "platform": "Facebook",
-    "img": "/images/08_crm_qa2.png",
+    "img": "/imagess/08_crm_qa2.png",
     "ar": "مش كل البرامج بتناسب كل الشركات.\n\nقبل ما تشتري أي نظام — اسأل نفسك:\n\n١. إيه المشكلة اللي عايزها تتحل أولاً؟\n٢. الفريق هيقدر يستخدمه بسهولة؟\n٣. في دعم فني باللغة العربية؟\n٤. هيكبر معاك لما شركتك تكبر؟\n٥. التكلفة مناسبة للعائد المتوقع؟\n\nالاختيار الغلط بيكلف أكتر من عدم الشراء أصلاً.\n\n💾 حفظ الـ post ده — هتحتاجه لما تقارن بين الخيارات.\n\n#برامج_إدارة #مصر #نصائح_أعمال",
     "en": "Not every software suits every business.\n\nBefore buying any system — ask yourself:\n\n1. What's the problem I want solved first?\n2. Can the team use it easily?\n3. Is there Arabic-language support?\n4. Will it scale as my company grows?\n5. Is the cost justified by the expected ROI?\n\nThe wrong choice costs more than not buying at all.\n\n💾 Save this post — you'll need it when comparing options.\n\n#BusinessSoftware #Egypt #BusinessTips"
   },
@@ -151,7 +151,7 @@ export const POSTS = [
     "day": "السبت",
     "time": "09:00",
     "platform": "Instagram",
-    "img": "/images/01_crm_phone_r.png",
+    "img": "/imagess/01_crm_phone_r.png",
     "ar": "قبل منطق CRM — بعد منطق CRM.\n\nقبل:\n❌ متابعة العملاء على WhatsApp\n❌ ملاحظات على ورق أو Excel\n❌ \"فاكر\" إن العميل طلب كذا\n❌ صفقات بتتضيع من غير ما حد يعرف ليه\n\nبعد:\n✅ كل عميل ليه ملف كامل\n✅ تاريخ كل مكالمة ورسالة واجتماع\n✅ تنبيهات تلقائية للمتابعة\n✅ معدل فوز وصل لـ ٦٢٪\n\nالفرق مش في الفريق — الفرق في الأدوات.\n\n📲 تفاصيل أكتر — اللينك في البايو\n\n#منطق #CRM #مبيعات #مصر",
     "en": "Before MANTIQ CRM — After MANTIQ CRM.\n\nBefore:\n❌ Following up with clients on WhatsApp\n❌ Notes on paper or Excel\n❌ \"I think\" the client asked for this\n❌ Deals lost without anyone knowing why\n\nAfter:\n✅ Every client has a complete file\n✅ History of every call, message, and meeting\n✅ Automatic follow-up alerts\n✅ Win rate reached 62%\n\nThe difference isn't the team — it's the tools.\n\n📲 More details — link in bio\n\n#MANTIQ #CRM #Sales #Egypt"
   },
@@ -163,7 +163,7 @@ export const POSTS = [
     "day": "الاثنين",
     "time": "19:00",
     "platform": "LinkedIn",
-    "img": "/images/02_crm_laptop_leads.png",
+    "img": "/imagess/02_crm_laptop_leads.png",
     "ar": "شركة تجارية في القاهرة — قصة حقيقية.\n\nالمشكلة:\nفريق مبيعات ٥ أشخاص، كل واحد شغال لوحده.\nمفيش رؤية مشتركة للعملاء.\nكان بيحصل إن اتنين من الفريق بيتواصلوا مع نفس العميل.\n\nالنتيجة: العميل بيحس بعدم احترافية وبيروح للمنافس.\n\nبعد ٣ شهور من تطبيق منطق CRM:\n📈 معدل الفوز زاد ٢٨٪\n📈 وقت إغلاق الصفقة قل ٤٠٪\n📈 مفيش تضارب في التواصل مع العملاء\n\nالحل مش بيبدأ بفريق أحسن — بيبدأ بنظام أوضح.\n\n#منطق #CRM #مبيعات #مصر",
     "en": "A trading company in Cairo — a real story.\n\nThe problem:\nSales team of 5 people, each working alone.\nNo shared view of clients.\nTwo team members were contacting the same client.\n\nResult: The client felt unprofessionalism and went to a competitor.\n\nAfter 3 months implementing MANTIQ CRM:\n📈 Win rate increased 28%\n📈 Deal closing time reduced 40%\n📈 No more conflicting client communication\n\nThe solution doesn't start with a better team — it starts with a clearer system.\n\n#MANTIQ #CRM #Sales #Egypt"
   },
@@ -175,7 +175,7 @@ export const POSTS = [
     "day": "الأربعاء",
     "time": "18:00",
     "platform": "Instagram",
-    "img": "/images/05_crm_phone_l.png",
+    "img": "/imagess/05_crm_phone_l.png",
     "ar": "٤.٢ مليون جنيه في pipeline.\n\nده مش رقم خيالي.\nده قيمة الصفقات النشطة لشركة متوسطة بتستخدم منطق CRM.\n\nكل جنيه منهم:\n✅ معروف اسم العميل\n✅ معروف المرحلة اللي فيها\n✅ معروف احتمال الإغلاق\n✅ معروف الخطوة الجاية\n\nلو عندك pipeline ومش شايفه كده —\nبتاخد قرارات من غير صورة كاملة.\n\n💬 قد إيه قيمة صفقاتك النشطة دلوقتي؟\n\n#منطق #CRM #مبيعات #مصر",
     "en": "4.2 million EGP in pipeline.\n\nThis isn't a fantasy number.\nIt's the value of active deals for a mid-size company using MANTIQ CRM.\n\nEvery pound of it:\n✅ Client name is known\n✅ Stage is known\n✅ Closing probability is known\n✅ Next step is known\n\nIf you have a pipeline but can't see it this way —\nyou're making decisions without the full picture.\n\n💬 What's the value of your active deals right now?\n\n#MANTIQ #CRM #Sales #Egypt"
   },
@@ -187,7 +187,7 @@ export const POSTS = [
     "day": "الجمعة",
     "time": "15:00",
     "platform": "Instagram",
-    "img": "/images/06_crm_big_phone.png",
+    "img": "/imagess/06_crm_big_phone.png",
     "ar": "٨٤ صفقة — كلها في شاشة واحدة.\n\nمش في ٨٤ ورقة.\nمش في ٨٤ chat على WhatsApp.\nمش في ذاكرة ٨٤ مندوب.\n\nفي شاشة واحدة، كل صفقة:\n• اسم العميل وتاريخ التواصل\n• القيمة واحتمال الإغلاق\n• الخطوة الجاية والمسؤول\n\nده مش رفاهية — ده الحد الأدنى لإدارة مبيعات محترمة.\n\n#منطق #CRM #إدارة_مبيعات #مصر",
     "en": "84 deals — all on one screen.\n\nNot in 84 papers.\nNot in 84 WhatsApp chats.\nNot in 84 reps' memories.\n\nOn one screen, every deal has:\n• Client name and contact history\n• Value and closing probability\n• Next step and who's responsible\n\nThis isn't a luxury — it's the minimum for professional sales management.\n\n#MANTIQ #CRM #SalesManagement #Egypt"
   },
@@ -199,7 +199,7 @@ export const POSTS = [
     "day": "السبت",
     "time": "09:00",
     "platform": "Instagram",
-    "img": "/images/11_sls_phone_r.png",
+    "img": "/imagess/11_sls_phone_r.png",
     "ar": "مندوب مبيعات من غير نظام = سباحة من غير خريطة.\n\nالمندوب بيشتغل تمام.\nبيتعب وبيكد.\nبس في نهاية الشهر — مش واضح هو حقق قد إيه.\n\nمع منطق Sales:\n✅ كل مندوب عارف هدفه اليومي والشهري\n✅ العمولة بتتحسب تلقائي — مفيش خلاف\n✅ المدير شايف الأداء في الوقت الفعلي\n✅ التقرير الشهري جاهز في ثانية\n\nالمندوب اللي عنده أدوات واضحة بيحقق أكتر.\n\n#منطق #مبيعات #Sales #مصر",
     "en": "A sales rep without a system = swimming without a map.\n\nThe rep works well.\nPuts in effort and works hard.\nBut at month-end — it's unclear how much they achieved.\n\nWith MANTIQ Sales:\n✅ Every rep knows their daily and monthly target\n✅ Commission calculated automatically — no disputes\n✅ Manager sees performance in real time\n✅ Monthly report ready in a second\n\nA rep with clear tools achieves more.\n\n#MANTIQ #Sales #Egypt"
   },
@@ -211,7 +211,7 @@ export const POSTS = [
     "day": "الاثنين",
     "time": "19:00",
     "platform": "LinkedIn",
-    "img": "/images/15_sls_phone_l.png",
+    "img": "/imagess/15_sls_phone_l.png",
     "ar": "السؤال اللي كل مدير مبيعات بيخاف منه:\n\n\"ليه الإيراد النهارده أقل من الشهر اللي فات؟\"\n\nمن غير نظام — إجابتك هتكون:\n❌ \"مش عارف\"\n❌ \"السوق وحش\"\n❌ \"الفريق محتاج يتحفز\"\n\nمع منطق Sales — إجابتك هتبقى:\n✅ \"معدل التحويل نزل في مرحلة العرض\"\n✅ \"متوسط قيمة الصفقة اتأثر بقطاع معين\"\n✅ \"مندوب X حقق ٤٥٪ بس من هدفه\"\n\nالفرق بين تخمين وقرار.\n\n#منطق #مبيعات #تحليل #مصر",
     "en": "The question every sales manager fears:\n\n\"Why is today's revenue less than last month?\"\n\nWithout a system — your answer will be:\n❌ \"I don't know\"\n❌ \"The market is bad\"\n❌ \"The team needs motivation\"\n\nWith MANTIQ Sales — your answer will be:\n✅ \"Conversion rate dropped at the proposal stage\"\n✅ \"Average deal value was affected by a specific sector\"\n✅ \"Rep X only achieved 45% of their target\"\n\nThe difference between guessing and deciding.\n\n#MANTIQ #Sales #Analytics #Egypt"
   },
@@ -223,7 +223,7 @@ export const POSTS = [
     "day": "الأربعاء",
     "time": "18:00",
     "platform": "Instagram",
-    "img": "/images/16_sls_big_phone.png",
+    "img": "/imagess/16_sls_big_phone.png",
     "ar": "العمولة — أكتر موضوع بيعمل توتر في فريق المبيعات.\n\n\"أنا حسبت كده.\"\n\"لأ، المتفق عليه كان كده.\"\n\"الشهر اللي فات كان في كذا.\"\n\nكل نقاش من ده بيضيع وقت وعلاقة.\n\nمع منطق:\n✅ قواعد العمولة متحددة مسبقاً\n✅ كل مندوب شايف عمولته لحظياً\n✅ مفيش خلاف — الأرقام واضحة للكل\n\nلما الفريق واثق في النظام — بيركز على البيع مش على الجدال.\n\n#منطق #مبيعات #عمولات #مصر",
     "en": "Commission — the topic that creates the most tension in sales teams.\n\n\"I calculated it this way.\"\n\"No, the agreement was this.\"\n\"Last month there was this.\"\n\nEvery conversation like this wastes time and damages relationships.\n\nWith MANTIQ:\n✅ Commission rules set in advance\n✅ Every rep sees their commission in real time\n✅ No disputes — numbers are clear for everyone\n\nWhen the team trusts the system — they focus on selling, not arguing.\n\n#MANTIQ #Sales #Commission #Egypt"
   },
@@ -235,7 +235,7 @@ export const POSTS = [
     "day": "الجمعة",
     "time": "15:00",
     "platform": "LinkedIn",
-    "img": "/images/17_sls_laptop_orders.png",
+    "img": "/imagess/17_sls_laptop_orders.png",
     "ar": "١٣٨ طلب في شهر واحد.\n\nلو كل طلب أخد ١٥ دقيقة إدارة يدوية —\nده ٣٤.٥ ساعة شغل إداري في الشهر.\n\nيعني موظف كامل بيشتغل ٤ أيام وربع\nعلى مجرد إدخال بيانات وتتبع طلبات.\n\nمع منطق Sales — كل ده بيتعمل تلقائي:\n✅ إنشاء الطلب من عرض السعر بضغطة\n✅ تتبع الحالة لحظياً\n✅ إشعارات تلقائية للعميل\n✅ تقرير شهري جاهز\n\nوفّر الوقت ده للبيع الحقيقي.\n\n#منطق #مبيعات #أتمتة #مصر",
     "en": "138 orders in one month.\n\nIf each order took 15 minutes of manual management —\nthat's 34.5 hours of admin work per month.\n\nMeaning a full employee working 4.5 days\njust on data entry and order tracking.\n\nWith MANTIQ Sales — all of this is automated:\n✅ Create order from quote in one click\n✅ Track status in real time\n✅ Automatic notifications to client\n✅ Monthly report ready\n\nSave that time for real selling.\n\n#MANTIQ #Sales #Automation #Egypt"
   },
@@ -247,7 +247,7 @@ export const POSTS = [
     "day": "السبت",
     "time": "09:00",
     "platform": "Instagram",
-    "img": "/images/21_hr_phone_r.png",
+    "img": "/imagess/21_hr_phone_r.png",
     "ar": "مسير الرواتب — قبل وبعد.\n\nقبل:\n❌ ٤–٦ ساعات كل شهر\n❌ خطأ بشري محتمل في كل خطوة\n❌ متابعة الإجازات يدوياً\n❌ الموظف بيسأل \"عمولتي كام؟\" وما فيش إجابة فورية\n\nبعد:\n✅ كل حسابات الراتب تلقائية\n✅ الإجازات محتسبة أوتوماتيك\n✅ كل موظف شايف راتبه وخصوماته\n✅ مسير الرواتب جاهز في أقل من ساعة\n\n١.٨ مليون جنيه رواتب شهرياً — معالجة في دقائق.\n\n#منطق #HR #رواتب #مصر",
     "en": "Payroll — before and after.\n\nBefore:\n❌ 4–6 hours every month\n❌ Potential human error at every step\n❌ Manual leave tracking\n❌ Employee asks \"what's my commission?\" and no instant answer\n\nAfter:\n✅ All salary calculations automatic\n✅ Leaves counted automatically\n✅ Every employee sees their salary and deductions\n✅ Payroll ready in less than an hour\n\n1.8M EGP monthly payroll — processed in minutes.\n\n#MANTIQ #HR #Payroll #Egypt"
   },
@@ -259,7 +259,7 @@ export const POSTS = [
     "day": "الاثنين",
     "time": "19:00",
     "platform": "LinkedIn",
-    "img": "/images/25_hr_phone_l.png",
+    "img": "/imagess/25_hr_phone_l.png",
     "ar": "الحضور والغياب — أكتر مشكلة يدوية في HR.\n\nالطريقة القديمة:\n📋 ورقة توقيع كل يوم\n📋 حد يعد الأيام آخر الشهر\n📋 نقاش مع الموظف \"أنت غبت يوم كذا\"\n📋 حساب الخصم يدوياً\n\nالنتيجة: وقت ضايع وتوتر مع الفريق.\n\nمع منطق HR:\n✅ تسجيل الحضور تلقائي\n✅ أي غياب بيظهر فوراً\n✅ الخصم بيتحسب تلقائي مع الراتب\n✅ التقارير جاهزة في أي وقت\n\n٩٤٪ معدل حضور — مش بالمراقبة، بالنظام الواضح.\n\n#منطق #HR #حضور #مصر",
     "en": "Attendance and absences — the most manual HR problem.\n\nThe old way:\n📋 Sign-in sheet every day\n📋 Someone counts days at month-end\n📋 Discussion with employee \"you were absent on this day\"\n📋 Manually calculate deductions\n\nResult: Wasted time and team tension.\n\nWith MANTIQ HR:\n✅ Automatic attendance recording\n✅ Any absence appears instantly\n✅ Deduction calculated automatically with salary\n✅ Reports ready at any time\n\n94% attendance rate — not through surveillance, through a clear system.\n\n#MANTIQ #HR #Attendance #Egypt"
   },
@@ -271,7 +271,7 @@ export const POSTS = [
     "day": "الأربعاء",
     "time": "18:00",
     "platform": "Instagram",
-    "img": "/images/26_hr_big_phone.png",
+    "img": "/imagess/26_hr_big_phone.png",
     "ar": "موظف وصحيح جنبك — وانت عارف ده من أول يوم.\n\nلو عندك ٢٤٨ موظف —\nإزاي بتعرف مين بيأدي كويس ومين محتاج دعم؟\n\nمع منطق HR:\n✅ تقييم أداء فصلي بمعايير واضحة\n✅ مقارنة الأداء بين الأقسام\n✅ اكتشف المواهب قبل ما يفكروا يسيبوا\n✅ قرارات الترقية مبنية على بيانات\n\n٤.١/٥ متوسط الأداء — مش تخمين، أرقام حقيقية.\n\n#منطق #HR #أداء_الموظفين #مصر",
     "en": "The right employee is beside you — and you know it from day one.\n\nIf you have 248 employees —\nhow do you know who's performing well and who needs support?\n\nWith MANTIQ HR:\n✅ Quarterly performance reviews with clear criteria\n✅ Compare performance across departments\n✅ Discover talent before they think of leaving\n✅ Promotion decisions based on data\n\n4.1/5 average performance — not guesswork, real numbers.\n\n#MANTIQ #HR #EmployeePerformance #Egypt"
   },
@@ -283,7 +283,7 @@ export const POSTS = [
     "day": "الجمعة",
     "time": "15:00",
     "platform": "LinkedIn",
-    "img": "/images/27_hr_laptop_dark.png",
+    "img": "/imagess/27_hr_laptop_dark.png",
     "ar": "التوظيف — إزاي بيتعمل في معظم الشركات المصرية:\n\n١. إعلان على Facebook\n٢. تاني في الـ inbox\n٣. مقابلات غير منظمة\n٤. قرار على إحساس\n٥. الموظف الجديد بيجي — ومفيش onboarding منظم\n\nالنتيجة: ٤٠٪ من الموظفين الجدد بيسيبوا في السنة الأولى.\n\nمع منطق HR:\n✅ تتبع كل طلب توظيف من التقديم للتعيين\n✅ تقييم المرشحين بمعايير موحدة\n✅ onboarding checklist جاهز\n✅ بيانات كاملة من أول يوم\n\n#منطق #HR #توظيف #مصر",
     "en": "Recruitment — how it works at most Egyptian companies:\n\n1. Post on Facebook\n2. Inbox floods\n3. Unorganized interviews\n4. Decision based on gut feeling\n5. New employee arrives — with no structured onboarding\n\nResult: 40% of new employees leave in the first year.\n\nWith MANTIQ HR:\n✅ Track every application from submission to hire\n✅ Evaluate candidates with unified criteria\n✅ Onboarding checklist ready\n✅ Complete data from day one\n\n#MANTIQ #HR #Recruitment #Egypt"
   },
@@ -295,7 +295,7 @@ export const POSTS = [
     "day": "السبت",
     "time": "09:00",
     "platform": "Instagram",
-    "img": "/images/31_fin_phone_r.png",
+    "img": "/imagess/31_fin_phone_r.png",
     "ar": "الوضوح المالي — رفاهية ولا ضرورة؟\n\nصاحب شركة بيشتغل ١٢ ساعة يومياً.\nالشغل تمام، العملاء راضيين.\nبس في نهاية الشهر — مش عارف شركته ربحت كام بالظبط.\n\nده مش فشل — ده نتيجة طبيعية لغياب النظام المالي.\n\nمع منطق Finance:\n✅ الإيراد والمصاريف متتبعين لحظياً\n✅ P&L جاهز في أي وقت\n✅ التدفق النقدي واضح أسبوع لأسبوع\n✅ مفاجآت آخر الشهر = صفر\n\nالوضوح المالي مش رفاهية — ده أساس كل قرار صح.\n\n#منطق #مالية #محاسبة #مصر",
     "en": "Financial clarity — luxury or necessity?\n\nA business owner working 12 hours daily.\nBusiness is good, clients are happy.\nBut at month-end — doesn't know exactly how much the company made.\n\nThis isn't failure — it's the natural result of no financial system.\n\nWith MANTIQ Finance:\n✅ Revenue and expenses tracked in real time\n✅ P&L ready at any time\n✅ Cash flow clear week by week\n✅ End-of-month surprises = zero\n\nFinancial clarity isn't a luxury — it's the foundation of every right decision.\n\n#MANTIQ #Finance #Accounting #Egypt"
   },
@@ -307,7 +307,7 @@ export const POSTS = [
     "day": "الاثنين",
     "time": "19:00",
     "platform": "LinkedIn",
-    "img": "/images/35_fin_phone_l.png",
+    "img": "/imagess/35_fin_phone_l.png",
     "ar": "الفواتير المتأخرة — بتكلف أكتر مما بتعتقد.\n\n٤٢٠ ألف جنيه مستحقات.\nمش معناه إن الشركة خسرت — معناه إن الفلوس موجودة بس مش في إيدك.\n\nوالفلوس اللي مش في إيدك:\n❌ مش بتكسب عليها\n❌ بتأثر على قدرتك تدفع للموردين\n❌ ممكن تتحول لـ bad debt\n\nمع منطق Finance:\n✅ كل فاتورة متتبعة بتاريخ الاستحقاق\n✅ تذكيرات تلقائية للعملاء\n✅ تقرير المستحقات جاهز دايماً\n✅ معدل التحصيل وصل لـ ٨٧٪\n\n#منطق #مالية #فواتير #مصر",
     "en": "Overdue invoices — costing more than you think.\n\n420K EGP in receivables.\nDoesn't mean the company lost — means the money exists but isn't in your hands.\n\nMoney not in your hands:\n❌ Isn't earning returns\n❌ Affects your ability to pay suppliers\n❌ Could become bad debt\n\nWith MANTIQ Finance:\n✅ Every invoice tracked with due date\n✅ Automatic reminders to clients\n✅ Receivables report always ready\n✅ Collection rate reached 87%\n\n#MANTIQ #Finance #Invoices #Egypt"
   },
@@ -319,7 +319,7 @@ export const POSTS = [
     "day": "الأربعاء",
     "time": "18:00",
     "platform": "Instagram",
-    "img": "/images/36_fin_big_phone.png",
+    "img": "/imagess/36_fin_big_phone.png",
     "ar": "P&L في ثانية — مش في أسبوع.\n\nالمشكلة اللي بتحصل في معظم الشركات:\nالمحاسب بياخد أسبوع–أسبوعين عشان يعمل تقرير الأرباح والخسائر.\n\nفي الأسبوعين دول:\n❌ بتاخد قرارات من غير صورة كاملة\n❌ الفرص ممكن تعدي\n❌ المشاكل ممكن تتفاقم\n\nمع منطق Finance:\n✅ إيراد: +٣.٦M جنيه\n✅ مصاريف: -١.٩M جنيه\n✅ صافي ربح: ١.٧M جنيه (٤٧٪ هامش)\n\nفي لحظة — مش في أسبوعين.\n\n#منطق #مالية #P&L #مصر",
     "en": "P&L in a second — not in a week.\n\nThe problem that happens at most companies:\nThe accountant takes 1–2 weeks to prepare the profit and loss report.\n\nDuring those two weeks:\n❌ You're making decisions without the full picture\n❌ Opportunities can pass\n❌ Problems can worsen\n\nWith MANTIQ Finance:\n✅ Revenue: +3.6M EGP\n✅ Expenses: -1.9M EGP\n✅ Net profit: 1.7M EGP (47% margin)\n\nIn an instant — not in two weeks.\n\n#MANTIQ #Finance #PnL #Egypt"
   },
@@ -331,7 +331,7 @@ export const POSTS = [
     "day": "الجمعة",
     "time": "15:00",
     "platform": "LinkedIn",
-    "img": "/images/37_fin_laptop_dark.png",
+    "img": "/imagess/37_fin_laptop_dark.png",
     "ar": "الضريبة — أكتر موضوع بيخوف أصحاب الشركات.\n\nمش لأنهم بيتهربوا.\nلأن التوثيق مش منظم.\n\nوقت التدقيق الضريبي:\n❌ دور على فواتير من ٣ سنين\n❌ طابق بين الأرقام\n❌ تثبت كل مصروف\n\nده مرهق ومكلف — حتى لو شغلك نظيف ١٠٠٪.\n\nمع منطق Finance:\n✅ كل فاتورة محفوظة ومصنفة\n✅ VAT 14% محتسب تلقائياً\n✅ جاهز للتدقيق في أي لحظة\n✅ توفير في fees المحاسب القانوني\n\n#منطق #مالية #ضرائب #مصر",
     "en": "Tax — the topic that scares business owners the most.\n\nNot because they're evading.\nBecause their documentation is disorganized.\n\nDuring tax audit:\n❌ Search for invoices from 3 years ago\n❌ Match the numbers\n❌ Prove every expense\n\nThis is exhausting and costly — even if your work is 100% clean.\n\nWith MANTIQ Finance:\n✅ Every invoice saved and categorized\n✅ 14% VAT auto-calculated\n✅ Audit-ready at any moment\n✅ Save on CPA fees\n\n#MANTIQ #Finance #Tax #Egypt"
   },
@@ -343,7 +343,7 @@ export const POSTS = [
     "day": "السبت",
     "time": "09:00",
     "platform": "Instagram",
-    "img": "/images/41_ac_phone_r.png",
+    "img": "/imagess/41_ac_phone_r.png",
     "ar": "منطق Academy — الحل الكامل للمراكز التعليمية.\n\n٣١٢ طالب. ٢٤ معلم. ١٨٦ ألف جنيه شهرياً.\nكل ده في نظام واحد.\n\n✅ سجل كل طالب — حضور ودرجات وسداد\n✅ جداول المعلمين والحصص\n✅ تواصل مباشر مع أولياء الأمور\n✅ الإيرادات والمصاريف تلقائية\n✅ تقارير جاهزة في أي وقت\n\nمش بس نظام — ده شريكك في تطوير مركزك.\n\n📲 جرب مجاناً — اللينك في البايو\n\n#منطق #أكاديمية #مراكز_تعليمية #مصر",
     "en": "MANTIQ Academy — the complete solution for educational centers.\n\n312 students. 24 teachers. 186K EGP monthly.\nAll in one system.\n\n✅ Full student record — attendance, grades, payment\n✅ Teacher schedules and lessons\n✅ Direct parent communication\n✅ Revenue and expenses automatic\n✅ Reports ready at any time\n\nNot just a system — it's your partner in developing your center.\n\n📲 Try free — link in bio\n\n#MANTIQ #Academy #EducationalCenters #Egypt"
   },
@@ -355,7 +355,7 @@ export const POSTS = [
     "day": "الاثنين",
     "time": "19:00",
     "platform": "LinkedIn",
-    "img": "/images/42_ac_laptop_red.png",
+    "img": "/imagess/42_ac_laptop_red.png",
     "ar": "المركز التعليمي اللي بيكبر — بيكبر بنظام.\n\nمش بالمجهود الشخصي فقط.\nمش بإضافة موظفين أكتر.\nبنظام بيشتغل نيابة عنك في الأجزاء الإدارية.\n\nمنطق Academy بيوفرلك:\n✅ ٣+ ساعات أسبوعياً في إدارة الحضور\n✅ ٢+ ساعات في متابعة المدفوعات\n✅ ٤+ ساعات في إعداد التقارير\n\n= ٩ ساعات أسبوعياً تقدر تحطها في تطوير المحتوى التعليمي.\n\n٩١٪ معدل حضور. ١٨٦K إيراد شهري.\nالأرقام مش صدفة.\n\n#منطق #أكاديمية #تعليم #مصر",
     "en": "The educational center that grows — grows with a system.\n\nNot just through personal effort.\nNot by adding more employees.\nThrough a system that works on your behalf on the admin side.\n\nMANTIQ Academy saves you:\n✅ 3+ hours weekly on attendance management\n✅ 2+ hours on payment follow-up\n✅ 4+ hours on report preparation\n\n= 9 hours weekly you can put into developing educational content.\n\n91% attendance rate. 186K monthly revenue.\nThe numbers aren't a coincidence.\n\n#MANTIQ #Academy #Education #Egypt"
   },
@@ -367,7 +367,7 @@ export const POSTS = [
     "day": "الأربعاء",
     "time": "18:00",
     "platform": "Instagram",
-    "img": "/images/09_crm_feat1.png",
+    "img": "/imagess/09_crm_feat1.png",
     "ar": "منطق CRM — كل اللي محتاجه في مكان واحد.\n\n🔵 لوحة متابعة الصفقات\n🔵 تسجيل نقاط للعملاء المحتملين\n🔵 توقع الفوز بالذكاء الاصطناعي\n🔵 تقارير PDF تلقائية\n🔵 صلاحيات مخصصة لكل عضو\n🔵 سجل الأنشطة الكامل\n🔵 تكامل مع Sales و Finance\n\nكل ده في منصة واحدة — بدون تعقيد.\n\n📲 ابدأ تجربة مجانية ١٤ يوم\n\n#منطق #CRM #إدارة_عملاء #مصر",
     "en": "MANTIQ CRM — everything you need in one place.\n\n🔵 Deals tracking board\n🔵 Lead scoring\n🔵 AI win prediction\n🔵 Auto PDF reports\n🔵 Custom permissions per member\n🔵 Full activity log\n🔵 Integration with Sales & Finance\n\nAll in one platform — without complexity.\n\n📲 Start 14-day free trial\n\n#MANTIQ #CRM #ClientManagement #Egypt"
   },
@@ -379,7 +379,7 @@ export const POSTS = [
     "day": "الجمعة",
     "time": "15:00",
     "platform": "LinkedIn",
-    "img": "/images/10_crm_feat2.png",
+    "img": "/imagess/10_crm_feat2.png",
     "ar": "الأرقام بتتكلم عن نفسها.\n\nشركة بتستخدم منطق CRM لمدة ٦ شهور:\n\n📈 معدل الفوز: من ٣٨٪ لـ ٦٢٪\n📈 قيمة الـ pipeline: وصلت لـ ٤.٢M جنيه\n📈 وقت إغلاق الصفقة: قل ٤٠٪\n📈 رضا العملاء: زاد ٣٥٪\n\nمش وعود — أرقام حقيقية من السوق المصري.\n\n📲 تواصل معنا عشان نشوف الـ ROI المتوقع لشركتك\n\n#منطق #CRM #نتائج #مصر",
     "en": "The numbers speak for themselves.\n\nA company using MANTIQ CRM for 6 months:\n\n📈 Win rate: from 38% to 62%\n📈 Pipeline value: reached 4.2M EGP\n📈 Deal closing time: reduced 40%\n📈 Client satisfaction: increased 35%\n\nNot promises — real numbers from the Egyptian market.\n\n📲 Contact us to see the expected ROI for your company\n\n#MANTIQ #CRM #Results #Egypt"
   },
@@ -391,7 +391,7 @@ export const POSTS = [
     "day": "السبت",
     "time": "09:00",
     "platform": "Instagram",
-    "img": "/images/29_hr_feat1.png",
+    "img": "/imagess/29_hr_feat1.png",
     "ar": "منطق HR — إدارة فريقك بالكامل.\n\n🟣 دليل الموظفين الكامل\n🟣 مسير الرواتب والتأمينات\n🟣 الحضور والإجازات التلقائية\n🟣 تقييم الأداء الفصلي\n🟣 لوحة متابعة التوظيف\n🟣 التدريب والتطوير\n🟣 تقارير ضريبية جاهزة\n\n٢٤٨ موظف — مُدارون باحترافية.\n\nلو فريقك أكبر أو أصغر — النظام بيتكيف معاك.\n\n📲 تجربة مجانية — اللينك في البايو\n\n#منطق #HR #موارد_بشرية #مصر",
     "en": "MANTIQ HR — manage your entire team.\n\n🟣 Complete employee directory\n🟣 Payroll and insurance\n🟣 Automatic attendance and leaves\n🟣 Quarterly performance reviews\n🟣 Recruitment tracking board\n🟣 Training and development\n🟣 Tax reports ready\n\n248 employees — managed professionally.\n\nWhether your team is bigger or smaller — the system adapts to you.\n\n📲 Free trial — link in bio\n\n#MANTIQ #HR #HumanResources #Egypt"
   },
@@ -403,7 +403,7 @@ export const POSTS = [
     "day": "الاثنين",
     "time": "19:00",
     "platform": "LinkedIn",
-    "img": "/images/30_hr_feat2.png",
+    "img": "/imagess/30_hr_feat2.png",
     "ar": "نتائج حقيقية من شركة مصرية.\n\nقبل تطبيق منطق HR:\n⏰ مسير الرواتب: ٦ ساعات شهرياً\n⏰ متابعة الحضور: ٣ ساعات أسبوعياً\n⏰ إعداد تقارير HR: ٢ أيام ربع السنة\n\nبعد ٦ شهور:\n✅ مسير الرواتب: ٤٥ دقيقة\n✅ الحضور: تلقائي ١٠٠٪\n✅ التقارير: جاهزة في دقائق\n\nالوقت المُوفَّر = ٦٠+ ساعة شهرياً.\n\n٦٠ ساعة تقدر تحطها في تطوير الفريق بدل إدارته.\n\n#منطق #HR #نتائج #مصر",
     "en": "Real results from an Egyptian company.\n\nBefore implementing MANTIQ HR:\n⏰ Payroll: 6 hours monthly\n⏰ Attendance tracking: 3 hours weekly\n⏰ HR report preparation: 2 days quarterly\n\nAfter 6 months:\n✅ Payroll: 45 minutes\n✅ Attendance: 100% automatic\n✅ Reports: ready in minutes\n\nTime saved = 60+ hours monthly.\n\n60 hours you can put into developing the team instead of managing it.\n\n#MANTIQ #HR #Results #Egypt"
   },
@@ -415,7 +415,7 @@ export const POSTS = [
     "day": "الأربعاء",
     "time": "18:00",
     "platform": "Instagram",
-    "img": "/images/39_fin_feat1.png",
+    "img": "/imagess/39_fin_feat1.png",
     "ar": "منطق Finance — الوضوح المالي الكامل.\n\n🟢 إيرادات ومصاريف لحظية\n🟢 فواتير مع VAT 14% تلقائي\n🟢 P&L في أي وقت\n🟢 إدارة الميزانية\n🟢 تدفق نقدي واضح\n🟢 جاهز للتدقيق الضريبي دايماً\n🟢 تصدير Excel وPDF\n\n٣.٦M جنيه إيراد. ٤٧٪ هامش ربح.\nدي نتيجة شركة عندها نظام مالي صح.\n\n📲 احجز demo مجاني\n\n#منطق #مالية #محاسبة #مصر",
     "en": "MANTIQ Finance — complete financial clarity.\n\n🟢 Real-time revenue and expenses\n🟢 Invoices with 14% VAT automatic\n🟢 P&L at any time\n🟢 Budget management\n🟢 Clear cash flow\n🟢 Always audit-ready\n🟢 Excel and PDF export\n\n3.6M EGP revenue. 47% profit margin.\nThat's the result of a company with the right financial system.\n\n📲 Book a free demo\n\n#MANTIQ #Finance #Accounting #Egypt"
   },
@@ -427,7 +427,7 @@ export const POSTS = [
     "day": "الجمعة",
     "time": "15:00",
     "platform": "LinkedIn",
-    "img": "/images/40_fin_feat2.png",
+    "img": "/imagess/40_fin_feat2.png",
     "ar": "٣ أشياء المحاسب بيتمناها في كل شركة:\n\n١. كل فاتورة في مكانها ومتصنفة\n٢. VAT محسوبة صح من أول ما الفاتورة بتتعمل\n٣. تقرير جاهز لما يطلبه من غير تجميع يدوي\n\nمع منطق Finance — المحاسب بيعمل تحليل بدل إدخال بيانات.\n\nوالفرق بين الاتنين؟\nإدخال بيانات = وقت ضايع\nتحليل = قرارات أحسن\n\n📲 تواصل مع فريقنا\n\n#منطق #مالية #محاسبة #مصر",
     "en": "3 things every accountant wishes every company had:\n\n1. Every invoice in its place and categorized\n2. VAT calculated correctly from the moment the invoice is created\n3. Report ready when requested without manual compilation\n\nWith MANTIQ Finance — the accountant does analysis instead of data entry.\n\nAnd the difference between the two?\nData entry = wasted time\nAnalysis = better decisions\n\n📲 Contact our team\n\n#MANTIQ #Finance #Accounting #Egypt"
   },
@@ -439,7 +439,7 @@ export const POSTS = [
     "day": "السبت",
     "time": "09:00",
     "platform": "Instagram",
-    "img": "/images/19_sls_feat1.png",
+    "img": "/imagess/19_sls_feat1.png",
     "ar": "منطق Sales — كل دورة المبيعات في مكان واحد.\n\n🟠 إدارة الفرص والـ leads\n🟠 عروض أسعار احترافية في دقائق\n🟠 طلبات البيع والتتبع\n🟠 عمولات المندوبين تلقائية\n🟠 أهداف وأداء كل مندوب\n🟠 تقارير الإيراد اليومية والشهرية\n\n١٣٨ طلب. ٧٨٪ تحقيق الحصة. نمو +١٦٪.\nفي شهر واحد.\n\n📲 شوف إزاي نقدر نعمل نفسه لشركتك\n\n#منطق #مبيعات #Sales #مصر",
     "en": "MANTIQ Sales — full sales cycle in one place.\n\n🟠 Opportunity and lead management\n🟠 Professional quotes in minutes\n🟠 Sales orders and tracking\n🟠 Automatic rep commissions\n🟠 Targets and performance per rep\n🟠 Daily and monthly revenue reports\n\n138 orders. 78% quota attainment. +16% growth.\nIn one month.\n\n📲 See how we can do the same for your company\n\n#MANTIQ #Sales #Egypt"
   },
@@ -451,7 +451,7 @@ export const POSTS = [
     "day": "الاثنين",
     "time": "19:00",
     "platform": "LinkedIn",
-    "img": "/images/20_sls_feat2.png",
+    "img": "/imagess/20_sls_feat2.png",
     "ar": "مدير المبيعات اللي عنده منطق — بيعرف ٥ حاجات قبل ما يدخل الاجتماع:\n\n١. إيه إجمالي الإيراد هذا الشهر مقارنة بالهدف\n٢. مين المندوب اللي أكتر قُرب من تحقيق الهدف\n٣. إيه الصفقات اللي هتتأثر الأسبوع الجاي\n٤. كام عرض سعر لسه ما تحولش لطلب\n٥. إيه متوسط وقت إغلاق الصفقة هذا الشهر\n\nمدير المبيعات من غير نظام — بيتمنى يعرف الإجابات دي.\n\nدي مش معلومات للتقرير — دي معلومات للقرار.\n\n#منطق #مبيعات #إدارة #مصر",
     "en": "The sales manager with MANTIQ — knows 5 things before entering a meeting:\n\n1. What's total revenue this month vs target\n2. Which rep is closest to hitting their goal\n3. Which deals will be affected next week\n4. How many quotes haven't converted to orders yet\n5. What's the average deal closing time this month\n\nThe sales manager without a system — wishes they knew these answers.\n\nThese aren't reporting information — these are decision-making information.\n\n#MANTIQ #Sales #Management #Egypt"
   },
@@ -463,7 +463,7 @@ export const POSTS = [
     "day": "الأربعاء",
     "time": "18:00",
     "platform": "Instagram",
-    "img": "/images/49_ac_feat1.png",
+    "img": "/imagess/49_ac_feat1.png",
     "ar": "منطق Academy — لكل من يدير مركز تعليمي.\n\n🔴 سجل الطلاب الكامل\n🔴 إدارة المعلمين والجداول\n🔴 الحضور والغياب تلقائي\n🔴 تواصل مع أولياء الأمور\n🔴 إيرادات ومصاريف لحظية\n🔴 تقارير الأداء الأكاديمي\n🔴 تحصيل الرسوم والمتابعة\n\n٣١٢ طالب، ٢٤ معلم، ٤ صفوف — كلهم في نظام واحد.\n\nلو مركزك أصغر أو أكبر — النظام بيكيف معاك.\n\n📲 احجز demo مجاني النهارده\n\n#منطق #أكاديمية #تعليم #مصر",
     "en": "MANTIQ Academy — for everyone managing an educational center.\n\n🔴 Complete student records\n🔴 Teacher and schedule management\n🔴 Automatic attendance and absences\n🔴 Parent communication\n🔴 Real-time revenue and expenses\n🔴 Academic performance reports\n🔴 Fee collection and follow-up\n\n312 students, 24 teachers, 4 class years — all in one system.\n\nWhether your center is smaller or bigger — the system adapts to you.\n\n📲 Book a free demo today\n\n#MANTIQ #Academy #Education #Egypt"
   },
@@ -475,7 +475,7 @@ export const POSTS = [
     "day": "الجمعة",
     "time": "15:00",
     "platform": "LinkedIn",
-    "img": "/images/50_ac_feat2.png",
+    "img": "/imagess/50_ac_feat2.png",
     "ar": "مركز تعليمي ناجح = تعليم جيد + إدارة محترفة.\n\nكتير من أصحاب المراكز بيركزوا على التعليم ١٠٠٪.\nوده صح — بس الإدارة الضعيفة بتضيع التعليم الجيد.\n\nطالب بيلاقي:\n❌ ولي أمره مش عارف حضوره\n❌ درجاته مش متسجلة صح\n❌ الرسوم بتتاخد بدون إيصال منظم\n\nهيغمض عينه ويكمل — ولا هيدور على مكان أحسن؟\n\nمنطق Academy بيضمن إن إدارتك بنفس مستوى تعليمك.\n\n#منطق #أكاديمية #إدارة_تعليمية #مصر",
     "en": "A successful educational center = good education + professional management.\n\nMany center owners focus 100% on education.\nAnd that's right — but weak management wastes good education.\n\nA student who finds:\n❌ Parent doesn't know their attendance\n❌ Grades not recorded properly\n❌ Fees collected without organized receipts\n\nWill they stay — or look for a better place?\n\nMANTIQ Academy ensures your management matches your education quality.\n\n#MANTIQ #Academy #EducationalManagement #Egypt"
   },
@@ -487,7 +487,7 @@ export const POSTS = [
     "day": "السبت",
     "time": "09:00",
     "platform": "Instagram",
-    "img": "/images/04_crm_tablet_dash.png",
+    "img": "/imagess/04_crm_tablet_dash.png",
     "ar": "منطق — النظام اللي بيجمع كل شركتك.\n\n🔵 CRM — ١٬٢٤٠ عميل مُدار\n🟠 Sales — ١٣٨ طلب شهرياً\n🟣 HR — ٢٤٨ موظف\n🟢 Finance — ٣.٦M جنيه إيراد متتبع\n🔴 Academy — ٣١٢ طالب\n\nمش ٥ برامج منفصلين.\nنظام واحد — كل الأنظمة متكاملة مع بعض.\n\nلما الـ CRM بييلاقي صفقة — الـ Finance بيتحدث تلقائياً.\nلما الـ HR بيوافق على إجازة — الـ Payroll بيعرف.\n\nده التكامل الحقيقي.\n\n📲 اللينك في البايو\n\n#منطق #ERP #إدارة_أعمال #مصر",
     "en": "MANTIQ — the system that brings your entire company together.\n\n🔵 CRM — 1,240 clients managed\n🟠 Sales — 138 orders monthly\n🟣 HR — 248 employees\n🟢 Finance — 3.6M EGP revenue tracked\n🔴 Academy — 312 students\n\nNot 5 separate programs.\nOne system — all modules integrated.\n\nWhen CRM finds a deal — Finance updates automatically.\nWhen HR approves leave — Payroll knows.\n\nThis is real integration.\n\n📲 Link in bio\n\n#MANTIQ #ERP #BusinessManagement #Egypt"
   },
@@ -499,7 +499,7 @@ export const POSTS = [
     "day": "الاثنين",
     "time": "19:00",
     "platform": "LinkedIn",
-    "img": "/images/14_sls_tablet.png",
+    "img": "/imagess/14_sls_tablet.png",
     "ar": "ليه منطق — مش غيره؟\n\n✅ نظام سحابي — اشتغل من أي مكان\n✅ واجهة عربية بالكامل\n✅ دعم فني مصري — مش chatbot\n✅ تحديثات مستمرة بدون رسوم إضافية\n✅ تدريب الفريق مجاناً\n✅ بيانات مخزنة في مصر\n✅ يكبر مع شركتك\n\nمش بس ميزات — ده التزام.\n\nمنطق اتبنى خصيصاً للسوق المصري.\nوبيفهم احتياجات الشركات المصرية.\n\n📲 تواصل مع فريق المبيعات\n\n#منطق #برامج_مصرية #إدارة_أعمال #مصر",
     "en": "Why MANTIQ — not others?\n\n✅ Cloud system — work from anywhere\n✅ Fully Arabic interface\n✅ Egyptian support team — not a chatbot\n✅ Continuous updates without extra fees\n✅ Free team training\n✅ Data stored in Egypt\n✅ Grows with your company\n\nNot just features — this is a commitment.\n\nMANTIQ was built specifically for the Egyptian market.\nAnd understands Egyptian business needs.\n\n📲 Contact the sales team\n\n#MANTIQ #EgyptianSoftware #BusinessManagement #Egypt"
   },
@@ -511,7 +511,7 @@ export const POSTS = [
     "day": "الأربعاء",
     "time": "18:00",
     "platform": "Instagram",
-    "img": "/images/24_hr_tablet_light.png",
+    "img": "/imagess/24_hr_tablet_light.png",
     "ar": "أكتر ٣ أسئلة بنتسألهم:\n\n١. \"قد إيه بياخد التطبيق؟\"\nالجواب: ٢–٤ أسابيع حسب الحجم.\nوالفريق بتاعنا بيكون جنبك في كل خطوة.\n\n٢. \"هيحتاج تدريب كتير؟\"\nالجواب: تدريب مجاني للفريق كله. وغالباً الناس بتتعلم في ساعات مش أيام.\n\n٣. \"لو حصل مشكلة — مين بيساعدني؟\"\nالجواب: دعم فني مصري — بالتليفون والـ chat.\nمش tickets بتاخد أيام.\n\n📲 تواصل معنا وخليني أجاوب على أي سؤال تاني\n\n#منطق #دعم_فني #مصر",
     "en": "The 3 most common questions we get asked:\n\n1. \"How long does implementation take?\"\nAnswer: 2–4 weeks depending on size.\nAnd our team is by your side at every step.\n\n2. \"Will it need a lot of training?\"\nAnswer: Free training for the whole team. And usually people learn in hours, not days.\n\n3. \"If there's a problem — who helps me?\"\nAnswer: Egyptian support team — by phone and chat.\nNot tickets that take days.\n\n📲 Contact us and let me answer any other question\n\n#MANTIQ #Support #Egypt"
   },
@@ -523,7 +523,7 @@ export const POSTS = [
     "day": "الجمعة",
     "time": "15:00",
     "platform": "Facebook",
-    "img": "/images/34_fin_tablet_light.png",
+    "img": "/imagess/34_fin_tablet_light.png",
     "ar": "قبل ما تقرر — خد ١٤ يوم تجرب.\n\nمش بروشور.\nمش demo مسجل.\nنظام حقيقي — بيانات شركتك الحقيقية.\n\nخلال ١٤ يوم هتشوف:\n✅ قد إيه وقت هيتوفرلك\n✅ قد إيه معلومات هتبقى قدامك\n✅ قد إيه أسهل من اللي بتعمله دلوقتي\n\nلو مش عجبك — مش هتدفع حاجة.\n\n📲 ابدأ تجربتك المجانية من اللينك في البايو\n\n#منطق #تجربة_مجانية #مصر",
     "en": "Before you decide — take 14 days to try.\n\nNot a brochure.\nNot a recorded demo.\nA real system — with your company's real data.\n\nIn 14 days you'll see:\n✅ How much time will be saved\n✅ How much information you'll have in front of you\n✅ How much easier it is than what you're doing now\n\nIf you don't like it — you won't pay anything.\n\n📲 Start your free trial from the link in bio\n\n#MANTIQ #FreeTrial #Egypt"
   },
@@ -535,7 +535,7 @@ export const POSTS = [
     "day": "السبت",
     "time": "09:00",
     "platform": "Instagram",
-    "img": "/images/44_ac_tablet_light.png",
+    "img": "/imagess/44_ac_tablet_light.png",
     "ar": "٣ شهور من دلوقتي — شركتك هتبقى فين؟\n\nالسيناريو الأول — من غير نظام:\nنفس المشاكل، نفس الوقت الضايع، نفس الضغط.\n\nالسيناريو التاني — مع منطق:\n✅ فريق المبيعات بيحقق ٢٠–٣٠٪ أكتر\n✅ الرواتب بتتعمل في أقل من ساعة\n✅ عارف وضعك المالي في أي لحظة\n✅ قرارات مبنية على بيانات مش تخمين\n\nالفرق بين السيناريوهين = قرار واحد بتاخده النهارده.\n\n📲 ابدأ تجربتك المجانية\n\n#منطق #إدارة_أعمال #مصر #تحول_رقمي",
     "en": "3 months from now — where will your company be?\n\nScenario 1 — without a system:\nSame problems, same wasted time, same pressure.\n\nScenario 2 — with MANTIQ:\n✅ Sales team achieving 20–30% more\n✅ Payroll done in less than an hour\n✅ Know your financial position at any moment\n✅ Decisions based on data not guesswork\n\nThe difference between the two scenarios = one decision you make today.\n\n📲 Start your free trial\n\n#MANTIQ #BusinessManagement #Egypt #DigitalTransformation"
   },
@@ -547,7 +547,7 @@ export const POSTS = [
     "day": "الاثنين",
     "time": "19:00",
     "platform": "LinkedIn",
-    "img": "/images/07_crm_laptop_light.png",
+    "img": "/imagess/07_crm_laptop_light.png",
     "ar": "لو بتقرأ الـ post ده — محتاج تعرف حاجة واحدة:\n\nمنطق مش برنامج بتشتريه وتنساه.\n\nده نظام بيكبر مع شركتك.\nلما تضيف موظفين — بيتعامل مع الأرقام الجديدة.\nلما تفتح فرع — بيكمّل معاك.\nلما السوق يتغير — بنحدّث النظام معاك.\n\nالشركات اللي شغّالة على منطق من سنة أو أكتر بتقول:\n\"الموضوع مش بس في توفير الوقت — الموضوع إننا بقينا نتخذ قرارات أحسن.\"\n\nوده الأهم.\n\n📲 تواصل مع فريقنا النهارده\n\n#منطق #شراكة #إدارة_أعمال #مصر",
     "en": "If you're reading this post — you need to know one thing:\n\nMANTIQ isn't software you buy and forget.\n\nIt's a system that grows with your company.\nWhen you add employees — it handles the new numbers.\nWhen you open a branch — it scales with you.\nWhen the market changes — we update the system with you.\n\nCompanies that have been running MANTIQ for a year or more say:\n\"It's not just about saving time — it's that we started making better decisions.\"\n\nAnd that's what matters most.\n\n📲 Contact our team today\n\n#MANTIQ #Partnership #BusinessManagement #Egypt"
   },
@@ -559,7 +559,7 @@ export const POSTS = [
     "day": "الأربعاء",
     "time": "18:00",
     "platform": "Instagram",
-    "img": "/images/12_sls_laptop_orange.png",
+    "img": "/imagess/12_sls_laptop_orange.png",
     "ar": "دلوقتي — مش بكره.\n\nكل يوم من غير نظام = وقت ضايع + فرصة فاتت.\n\nالشركات اللي بدأت التحول الرقمي من سنتين —\nدلوقتي بقت أكثر كفاءة بـ ٤٠٪ من منافسيها.\n\nمش لأنهم أذكى.\nلأنهم بدأوا أبكر.\n\n📲 اللينك في البايو — ابدأ تجربتك المجانية ١٤ يوم\n\nبدون بطاقة ائتمان. بدون التزام.\nبس جرب وشوف الفرق بنفسك.\n\n#منطق #ابدأ_دلوقتي #مصر",
     "en": "Now — not tomorrow.\n\nEvery day without a system = wasted time + missed opportunity.\n\nCompanies that started digital transformation 2 years ago —\nare now 40% more efficient than their competitors.\n\nNot because they're smarter.\nBecause they started earlier.\n\n📲 Link in bio — start your 14-day free trial\n\nNo credit card. No commitment.\nJust try and see the difference yourself.\n\n#MANTIQ #StartNow #Egypt"
   },
@@ -571,7 +571,7 @@ export const POSTS = [
     "day": "الجمعة",
     "time": "15:00",
     "platform": "LinkedIn",
-    "img": "/images/22_hr_laptop_purple.png",
+    "img": "/imagess/22_hr_laptop_purple.png",
     "ar": "سؤال أخير:\n\nلو في حاجة واحدة في إدارة شركتك ممكن تتحسن من بكره —\nإيه هي؟\n\nكومنت بإجابتك 👇\n\nهنرد على كل تعليق ونقولك بالظبط منطق هيحل المشكلة دي إزاي.\n\nوهتلاقينا متاحين ٦ أيام في الأسبوع.\n\n#منطق #إدارة_أعمال #مصر",
     "en": "One final question:\n\nIf there's one thing in managing your company that could improve starting tomorrow —\nwhat is it?\n\nComment your answer 👇\n\nWe'll reply to every comment and tell you exactly how MANTIQ solves that problem.\n\nAnd you'll find us available 6 days a week.\n\n#MANTIQ #BusinessManagement #Egypt"
   }

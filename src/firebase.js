@@ -1,13 +1,13 @@
 // src/firebase.js — Firebase Firestore (real-time shared edits)
 
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+import { initializeApp } from 'firebase/app';
 import {
   getFirestore,
   doc,
   getDoc,
   setDoc,
   onSnapshot,
-} from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+} from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey:            "AIzaSyDxCPz1cvIZZxUHwo-ZhTyf3VA1sQU2Ggc",
@@ -24,7 +24,7 @@ const db  = getFirestore(app);
 
 const DOC_REF = () => doc(db, 'mantiq_edits', 'all');
 
-// ── Load all edits once ───────────────────────────────────
+// ── Load all edits once on boot ───────────────────────────
 export async function loadAllEdits() {
   try {
     const snap = await getDoc(DOC_REF());
@@ -35,7 +35,7 @@ export async function loadAllEdits() {
   }
 }
 
-// ── Save one post edit ────────────────────────────────────
+// ── Save one post edit (merges, won't overwrite others) ───
 export async function saveEdit(postId, data) {
   try {
     await setDoc(DOC_REF(), { [postId]: data }, { merge: true });
@@ -46,7 +46,7 @@ export async function saveEdit(postId, data) {
   }
 }
 
-// ── Real-time listener — syncs all open devices instantly ─
+// ── Real-time listener — updates all open tabs instantly ──
 export function listenForEdits(callback) {
   return onSnapshot(DOC_REF(), (snap) => {
     if (snap.exists()) callback(snap.data());

@@ -8,7 +8,7 @@ export const POSTS = [
     "time": "09:00",
     "platform": "Facebook",
     "img": "/images/03_crm_qa1.png",
-    "ar": "😤 بتعمل اى فلمرتبات كل شهر؟\n\nلو إجابتك \"Excel\" أو \"يدوي\" —\nده مش مشكلتك إنت، ده نظام قديم بيكلفك وقت ومجهود كل شهر.\n\nأصحاب الشركات في مصر بيضيعوا في المتوسط:\n⏰ ٤–٦ ساعات في مسير الرواتب\n⏰ ٣–٤ ساعات في متابعة العملاء\n⏰ ٢–٣ ساعات في إعداد التقارير\n\n= ١٠+ ساعة أسبوعياً على أعمال إدارية مش على النمو.\n\n💬 قولنا في الكومنتات — أكتر حاجة بتاخد منك وقت في الإدارة؟\n\n#إدارة_أعمال #مصر #أصحاب_الشركات",
+    "ar": "😤 بتعمل الرواتب إزاي كل شهر؟\n\nلو إجابتك \"Excel\" أو \"يدوي\" —\nده مش مشكلتك إنت، ده نظام قديم بيكلفك وقت ومجهود كل شهر.\n\nأصحاب الشركات في مصر بيضيعوا في المتوسط:\n⏰ ٤–٦ ساعات في مسير الرواتب\n⏰ ٣–٤ ساعات في متابعة العملاء\n⏰ ٢–٣ ساعات في إعداد التقارير\n\n= ١٠+ ساعة أسبوعياً على أعمال إدارية مش على النمو.\n\n💬 قولنا في الكومنتات — أكتر حاجة بتاخد منك وقت في الإدارة؟\n\n#إدارة_أعمال #مصر #أصحاب_الشركات",
     "en": "😤 How do you run payroll every month?\n\nIf your answer is \"Excel\" or \"manually\" —\nThat's not your fault, it's an outdated system costing you time every month.\n\nEgyptian business owners waste on average:\n⏰ 4–6 hours on payroll\n⏰ 3–4 hours on client follow-up\n⏰ 2–3 hours on report preparation\n\n= 10+ hours weekly on admin instead of growth.\n\n💬 Tell us in the comments — what admin task takes most of your time?\n\n#BusinessManagement #Egypt #Entrepreneurs"
   },
   {
@@ -32,7 +32,7 @@ export const POSTS = [
     "time": "18:00",
     "platform": "Facebook",
     "img": "/images/13_sls_qa1.png",
-    "ar": "❓ كام صفقة ضاعت منك السنة الفاتت ؟\n\nمش لازم تعرف الرقم بالظبط — بس فكر:\n\nكام مرة قلت \"لازم أتابع مع العميل ده\" وبعدين نسيت؟\n\nكام مرة اكتشفت إن منافس خطف عميل كنت شاغل بيه؟\n\nكام مرة اتأخر عرض السعر وخسرت الصفقة؟\n\nالمشكلة مش في الفريق — المشكلة إن الذاكرة البشرية مش نظام.\n\n💬 شارك تجربتك — حصل معاك حاجة زي دي؟\n\n#مبيعات #إدارة_أعمال #مصر",
+    "ar": "❓ كام صفقة اتضيعت منك العام الماضي؟\n\nمش لازم تعرف الرقم بالظبط — بس فكر:\n\nكام مرة قلت \"لازم أتابع مع العميل ده\" وبعدين نسيت؟\n\nكام مرة اكتشفت إن منافس خطف عميل كنت شاغل بيه؟\n\nكام مرة اتأخر عرض السعر وخسرت الصفقة؟\n\nالمشكلة مش في الفريق — المشكلة إن الذاكرة البشرية مش نظام.\n\n💬 شارك تجربتك — حصل معاك حاجة زي دي؟\n\n#مبيعات #إدارة_أعمال #مصر",
     "en": "❓ How many deals did you lose last year?\n\nYou don't need to know the exact number — just think:\n\nHow many times did you say \"I need to follow up with this client\" and then forgot?\n\nHow many times did a competitor steal a client you were busy with?\n\nHow many times did a late quote cost you a deal?\n\nThe problem isn't the team — the problem is that human memory isn't a system.\n\n💬 Share your experience — has this happened to you?\n\n#Sales #BusinessManagement #Egypt"
   },
   {
@@ -120,26 +120,26 @@ export const POSTS = [
     "en": "A painful truth about educational centers in Egypt:\n\n68% of educational center owners don't know:\n- Which students will stay and which will leave\n- Which courses generate the most revenue\n- Which teacher impacts student retention most\n\nNot because they're not smart —\nbecause data is scattered across WhatsApp, papers, and sheets.\n\nData-driven centers achieve:\n📈 30% more student retention\n📈 25% annual revenue growth\n\n💬 Center owner? How do you make decisions currently?\n\n#Education #BusinessManagement #Egypt"
   },
   {
-    "id": "03_crm_qa1",
+    "id": "gen_digital_w3",
     "sys": "gen",
     "type": "qa",
     "week": 3,
     "day": "الأربعاء",
     "time": "18:00",
     "platform": "Facebook",
-    "img": "/images/03_crm_qa1.png",
+    "img": "/images/32_fin_laptop_green.png",
     "ar": "التحول الرقمي مش ترف — بقى ضرورة.\n\nبس خليني أكون صريح معاك:\n\nالتحول الرقمي مش معناه:\n❌ تشتري أغلى برنامج في السوق\n❌ تغير كل حاجة في يوم واحد\n❌ تحتاج فريق IT كامل\n\nمعناه:\n✅ تبدأ بحل المشكلة اللي بتوجعك أكتر\n✅ تشتغل بنظام بيناسب حجم شركتك\n✅ تقيس النتائج وتكمل خطوة خطوة\n\nالشركات اللي بدأت التحول الرقمي في مصر — حتى لو بخطوة صغيرة — بتنمو أسرع بـ ٢.٣x من اللي مش بادية.\n\n💬 إيه أول خطوة رقمية عملتها في شركتك؟\n\n#تحول_رقمي #مصر #إدارة_أعمال",
     "en": "Digital transformation isn't a luxury — it's become a necessity.\n\nBut let me be honest with you:\n\nDigital transformation doesn't mean:\n❌ Buy the most expensive software on the market\n❌ Change everything in one day\n❌ Need a full IT team\n\nIt means:\n✅ Start by solving your biggest pain point\n✅ Work with a system that fits your company size\n✅ Measure results and move step by step\n\nCompanies that started digital transformation in Egypt — even with a small step — grow 2.3x faster than those who haven't started.\n\n💬 What was the first digital step you took in your business?\n\n#DigitalTransformation #Egypt #BusinessManagement"
   },
   {
-    "id": "08_crm_qa2",
+    "id": "gen_software_w3",
     "sys": "gen",
     "type": "qa",
     "week": 3,
     "day": "الجمعة",
     "time": "15:00",
     "platform": "Facebook",
-    "img": "/images/08_crm_qa2.png",
+    "img": "/images/47_ac_laptop_dark.png",
     "ar": "مش كل البرامج بتناسب كل الشركات.\n\nقبل ما تشتري أي نظام — اسأل نفسك:\n\n١. إيه المشكلة اللي عايزها تتحل أولاً؟\n٢. الفريق هيقدر يستخدمه بسهولة؟\n٣. في دعم فني باللغة العربية؟\n٤. هيكبر معاك لما شركتك تكبر؟\n٥. التكلفة مناسبة للعائد المتوقع؟\n\nالاختيار الغلط بيكلف أكتر من عدم الشراء أصلاً.\n\n💾 حفظ الـ post ده — هتحتاجه لما تقارن بين الخيارات.\n\n#برامج_إدارة #مصر #نصائح_أعمال",
     "en": "Not every software suits every business.\n\nBefore buying any system — ask yourself:\n\n1. What's the problem I want solved first?\n2. Can the team use it easily?\n3. Is there Arabic-language support?\n4. Will it scale as my company grows?\n5. Is the cost justified by the expected ROI?\n\nThe wrong choice costs more than not buying at all.\n\n💾 Save this post — you'll need it when comparing options.\n\n#BusinessSoftware #Egypt #BusinessTips"
   },

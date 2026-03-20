@@ -8,7 +8,7 @@ export const POSTS = [
     "time": "09:00",
     "platform": "Facebook",
     "img": "/images/03_crm_qa1.png",
-    "ar": "😤 بتعمل الرواتب إزاي كل شهر؟\n\nلو إجابتك \"Excel\" أو \"يدوي\" —\nده مش مشكلتك إنت، ده نظام قديم بيكلفك وقت ومجهود كل شهر.\n\nأصحاب الشركات في مصر بيضيعوا في المتوسط:\n⏰ ٤–٦ ساعات في مسير الرواتب\n⏰ ٣–٤ ساعات في متابعة العملاء\n⏰ ٢–٣ ساعات في إعداد التقارير\n\n= ١٠+ ساعة أسبوعياً على أعمال إدارية مش على النمو.\n\n💬 قولنا في الكومنتات — أكتر حاجة بتاخد منك وقت في الإدارة؟\n\n#إدارة_أعمال #مصر #أصحاب_الشركات",
+    "ar": "😤 بتعمل اى فلمرتبات كل شهر؟\n\nلو إجابتك \"Excel\" أو \"يدوي\" —\nده مش مشكلتك إنت، ده نظام قديم بيكلفك وقت ومجهود كل شهر.\n\nأصحاب الشركات في مصر بيضيعوا في المتوسط:\n⏰ ٤–٦ ساعات في مسير الرواتب\n⏰ ٣–٤ ساعات في متابعة العملاء\n⏰ ٢–٣ ساعات في إعداد التقارير\n\n= ١٠+ ساعة أسبوعياً على أعمال إدارية مش على النمو.\n\n💬 قولنا في الكومنتات — أكتر حاجة بتاخد منك وقت في الإدارة؟\n\n#إدارة_أعمال #مصر #أصحاب_الشركات",
     "en": "😤 How do you run payroll every month?\n\nIf your answer is \"Excel\" or \"manually\" —\nThat's not your fault, it's an outdated system costing you time every month.\n\nEgyptian business owners waste on average:\n⏰ 4–6 hours on payroll\n⏰ 3–4 hours on client follow-up\n⏰ 2–3 hours on report preparation\n\n= 10+ hours weekly on admin instead of growth.\n\n💬 Tell us in the comments — what admin task takes most of your time?\n\n#BusinessManagement #Egypt #Entrepreneurs"
   },
   {
@@ -32,7 +32,7 @@ export const POSTS = [
     "time": "18:00",
     "platform": "Facebook",
     "img": "/images/13_sls_qa1.png",
-    "ar": "❓ كام صفقة اتضيعت منك العام الماضي؟\n\nمش لازم تعرف الرقم بالظبط — بس فكر:\n\nكام مرة قلت \"لازم أتابع مع العميل ده\" وبعدين نسيت؟\n\nكام مرة اكتشفت إن منافس خطف عميل كنت شاغل بيه؟\n\nكام مرة اتأخر عرض السعر وخسرت الصفقة؟\n\nالمشكلة مش في الفريق — المشكلة إن الذاكرة البشرية مش نظام.\n\n💬 شارك تجربتك — حصل معاك حاجة زي دي؟\n\n#مبيعات #إدارة_أعمال #مصر",
+    "ar": "❓ كام صفقة ضاعت منك السنة الفاتت ؟\n\nمش لازم تعرف الرقم بالظبط — بس فكر:\n\nكام مرة قلت \"لازم أتابع مع العميل ده\" وبعدين نسيت؟\n\nكام مرة اكتشفت إن منافس خطف عميل كنت شاغل بيه؟\n\nكام مرة اتأخر عرض السعر وخسرت الصفقة؟\n\nالمشكلة مش في الفريق — المشكلة إن الذاكرة البشرية مش نظام.\n\n💬 شارك تجربتك — حصل معاك حاجة زي دي؟\n\n#مبيعات #إدارة_أعمال #مصر",
     "en": "❓ How many deals did you lose last year?\n\nYou don't need to know the exact number — just think:\n\nHow many times did you say \"I need to follow up with this client\" and then forgot?\n\nHow many times did a competitor steal a client you were busy with?\n\nHow many times did a late quote cost you a deal?\n\nThe problem isn't the team — the problem is that human memory isn't a system.\n\n💬 Share your experience — has this happened to you?\n\n#Sales #BusinessManagement #Egypt"
   },
   {

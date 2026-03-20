@@ -1,3 +1,6 @@
+// src/app.js
+import { loadAllEdits, saveEdit, listenForEdits } from './firebase.js';
+
 // ── Constants ────────────────────────────────────────────
 const SYS = {
   crm: { name: 'CRM Tracker',     color: '#38bdf8' },
@@ -23,6 +26,7 @@ const SVG_DL   = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" str
 
 // ── State ────────────────────────────────────────────────
 let posts    = [];
+let rawPosts = [];
 let fSys     = 'all';
 let fType    = 'all';
 let fWeek    = 0;
@@ -40,58 +44,45 @@ function ok(p) {
   if (fWeek !== 0     && p.week !== fWeek) return false;
   if (fQ) {
     const q = fQ.toLowerCase();
-    if (!p.id.toLowerCase().includes(q) && !p.ar.toLowerCase().includes(q) && !p.en.toLowerCase().includes(q)) return false;
+    if (
+      !p.id.toLowerCase().includes(q) &&
+      !p.ar.toLowerCase().includes(q) &&
+      !p.en.toLowerCase().includes(q)
+    ) return false;
   }
   return true;
 }
 
-function loadPosts(raw) {
-  return raw.map(p => {
-    try {
-      const saved = localStorage.getItem('mq_' + p.id);
-      return saved ? { platform: 'Instagram', notes: '', ...p, ...JSON.parse(saved) }
-                   : { platform: 'Instagram', notes: '', ...p };
-    } catch (e) { return { platform: 'Instagram', notes: '', ...p }; }
-  });
+// ── Merge raw posts with Firestore edits ─────────────────
+function applyEdits(raw, edits) {
+  return raw.map(p => ({
+    platform: 'Instagram',
+    notes: '',
+    ...p,
+    ...(edits[p.id] || {}),
+  }));
 }
 
-function savePost(p) {
-  try {
-    localStorage.setItem('mq_' + p.id, JSON.stringify({
-      week: p.week, day: p.day, time: p.time,
-      platform: p.platform, ar: p.ar, en: p.en, notes: p.notes,
-    }));
-  } catch (e) {}
-}
-
+// ── Toast ─────────────────────────────────────────────────
 let _toastTimer;
-function showToast(msg) {
+function showToast(msg, duration = 2500) {
   const t = el('toast');
   t.textContent = msg;
   t.classList.add('show');
   clearTimeout(_toastTimer);
-  _toastTimer = setTimeout(() => t.classList.remove('show'), 2000);
+  _toastTimer = setTimeout(() => t.classList.remove('show'), duration);
 }
 
 function copyText(txt) {
   navigator.clipboard.writeText(txt).catch(() => {
     const ta = document.createElement('textarea');
-    ta.value = txt; document.body.appendChild(ta);
-    ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+    ta.value = txt;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
   });
   showToast('📋 تم النسخ!');
-}
-
-// ── Sidebar (mobile) ─────────────────────────────────────
-function openSidebar() {
-  el('sb').classList.add('open');
-  el('sbOverlay').classList.add('show');
-  document.body.style.overflow = 'hidden';
-}
-function closeSidebar() {
-  el('sb').classList.remove('open');
-  el('sbOverlay').classList.remove('show');
-  document.body.style.overflow = '';
 }
 
 // ── Render Grid ──────────────────────────────────────────
@@ -187,15 +178,8 @@ function switchView(v) {
   el('vGrid').style.display = v === 'grid' ? 'grid'  : 'none';
   el('vPlan').style.display = v === 'plan' ? 'block' : 'none';
   el('vWeek').style.display = v === 'week' ? 'block' : 'none';
-
-  // Sync top tabs
-  document.querySelectorAll('.vtab').forEach(b => {
-    b.classList.toggle('on', b.dataset.v === v);
-  });
-  // Sync bottom tabs
-  document.querySelectorAll('.mtab').forEach(b => {
-    b.classList.toggle('on', b.dataset.v === v);
-  });
+  document.querySelectorAll('.vtab').forEach(b => b.classList.toggle('on', b.dataset.v === v));
+  document.querySelectorAll('.mtab').forEach(b => b.classList.toggle('on', b.dataset.v === v));
 }
 
 // ── Full render ──────────────────────────────────────────
@@ -238,10 +222,14 @@ function openEdit(id) {
   el('eNotes').value     = p.notes || '';
   el('mEdit').classList.add('open');
 }
+
 function closeEdit() { el('mEdit').classList.remove('open'); }
-function saveEdit() {
+
+async function saveEditHandler() {
   const p = posts.find(x => x.id === editId);
   if (!p) return;
+
+  // Update in-memory
   p.week     = parseInt(el('eWeek').value);
   p.day      = el('eDay').value;
   p.time     = el('eTime').value;
@@ -249,13 +237,26 @@ function saveEdit() {
   p.ar       = el('eAR').value;
   p.en       = el('eEN').value;
   p.notes    = el('eNotes').value;
-  savePost(p);
+
   closeEdit();
   render();
-  showToast('✅ تم الحفظ بنجاح');
+  showToast('⏳ جارٍ الحفظ...', 60000);
+
+  const editData = {
+    week: p.week, day: p.day, time: p.time,
+    platform: p.platform, ar: p.ar, en: p.en, notes: p.notes,
+  };
+
+  const ok = await saveEdit(p.id, editData);
+
+  if (ok) {
+    showToast('✅ تم الحفظ — ظاهر على كل الأجهزة');
+  } else {
+    showToast('⚠️ حُفظ محلياً فقط — تحقق من Firebase');
+  }
 }
 
-// ── Download all visible ──────────────────────────────────
+// ── Download ──────────────────────────────────────────────
 async function downloadAll() {
   const visible = posts.filter(ok);
   dlCancel = false;
@@ -280,73 +281,82 @@ async function downloadAll() {
   el('mDL').classList.remove('open');
 }
 
-// ── Init ─────────────────────────────────────────────────
-export function initApp(rawPosts) {
-  posts = loadPosts(rawPosts);
+// ── Sidebar ──────────────────────────────────────────────
+function openSidebar()  { el('sb').classList.add('open');    el('sbOverlay').classList.add('show'); }
+function closeSidebar() { el('sb').classList.remove('open'); el('sbOverlay').classList.remove('show'); }
+
+// ── Boot ─────────────────────────────────────────────────
+export async function initApp(raw) {
+  rawPosts = raw;
+
+  // Show loading
+  el('vGrid').innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--mt)">
+    <div style="font-size:32px;margin-bottom:12px">⏳</div>
+    <div style="font-size:14px;font-weight:700">جارٍ تحميل التعديلات...</div>
+  </div>`;
+
+  // Load edits from Firestore
+  const edits = await loadAllEdits();
+  posts = applyEdits(rawPosts, edits);
 
   switchView('grid');
   render();
 
-  // ── Mobile sidebar toggle ────────────────────────────
+  // ── Real-time sync — updates all open tabs live ──────
+  listenForEdits((newEdits) => {
+    // Re-apply edits to raw posts (keeps any open edit modal unaffected)
+    const updatedPosts = applyEdits(rawPosts, newEdits);
+    // Merge — only update posts not currently being edited
+    updatedPosts.forEach((up, i) => {
+      if (posts[i] && up.id === posts[i].id && up.id !== editId) {
+        posts[i] = up;
+      }
+    });
+    render();
+  });
+
+  // ── View tabs ────────────────────────────────────────
+  document.querySelectorAll('.vtab').forEach(btn => {
+    btn.addEventListener('click', () => { switchView(btn.dataset.v); render(); });
+  });
+  document.querySelectorAll('.mtab').forEach(btn => {
+    btn.addEventListener('click', () => { switchView(btn.dataset.v); render(); });
+  });
+
+  // ── Mobile sidebar ───────────────────────────────────
   el('menuToggle').addEventListener('click', openSidebar);
   el('sbOverlay').addEventListener('click',  closeSidebar);
 
-  // ── View tabs (top nav) ──────────────────────────────
-  document.querySelectorAll('.vtab').forEach(btn => {
-    btn.addEventListener('click', () => {
-      switchView(btn.dataset.v);
-      render();
-    });
-  });
-
-  // ── View tabs (mobile bottom bar) ────────────────────
-  document.querySelectorAll('.mtab').forEach(btn => {
-    btn.addEventListener('click', () => {
-      switchView(btn.dataset.v);
-      render();
-    });
-  });
-
-  // ── Sidebar: system ──────────────────────────────────
+  // ── Sidebar filters ──────────────────────────────────
   document.querySelectorAll('[data-sys]').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('[data-sys]').forEach(b => b.classList.remove('on'));
       btn.classList.add('on');
       fSys = btn.dataset.sys;
-      closeSidebar();
-      render();
+      closeSidebar(); render();
     });
   });
-
-  // ── Sidebar: type ────────────────────────────────────
   document.querySelectorAll('[data-tp]').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('[data-tp]').forEach(b => b.classList.remove('on'));
       btn.classList.add('on');
       fType = btn.dataset.tp;
-      closeSidebar();
-      render();
+      closeSidebar(); render();
     });
   });
-
-  // ── Sidebar: week ────────────────────────────────────
   document.querySelectorAll('[data-wk]').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('[data-wk]').forEach(b => b.classList.remove('on'));
       btn.classList.add('on');
       fWeek = parseInt(btn.dataset.wk);
-      closeSidebar();
-      render();
+      closeSidebar(); render();
     });
   });
 
   // ── Search ───────────────────────────────────────────
-  el('search').addEventListener('input', e => {
-    fQ = e.target.value.trim();
-    render();
-  });
+  el('search').addEventListener('input', e => { fQ = e.target.value.trim(); render(); });
 
-  // ── Content clicks (delegated) ───────────────────────
+  // ── Content clicks ───────────────────────────────────
   el('cnt').addEventListener('click', e => {
     const btn = e.target.closest('[data-action]');
     if (!btn) return;
@@ -363,7 +373,7 @@ export function initApp(rawPosts) {
 
   el('btnCloseEdit').addEventListener('click',  closeEdit);
   el('btnCancelEdit').addEventListener('click', closeEdit);
-  el('btnSaveEdit').addEventListener('click',   saveEdit);
+  el('btnSaveEdit').addEventListener('click',   saveEditHandler);
   el('mEdit').addEventListener('click', e => { if (e.target === el('mEdit')) closeEdit(); });
 
   el('cpAR').addEventListener('click', () => copyText(el('eAR').value));
@@ -372,8 +382,7 @@ export function initApp(rawPosts) {
   // ── Download ─────────────────────────────────────────
   el('dlAllBtn').addEventListener('click', downloadAll);
   el('btnCancelDL').addEventListener('click', () => {
-    dlCancel = true;
-    el('mDL').classList.remove('open');
+    dlCancel = true; el('mDL').classList.remove('open');
   });
 
   // ── Keyboard ─────────────────────────────────────────

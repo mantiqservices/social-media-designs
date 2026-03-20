@@ -1,11 +1,14 @@
 {
-  "name": "mantiq-contentplan",
+  "name": "mantiq-content-planner",
   "version": "1.0.0",
-  "description": "MANTIQ Social Media Content Plan",
+  "description": "MANTIQ Social Media Content Planner",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+  },
+  "dependencies": {
+    "firebase": "^10.12.0"
   },
   "devDependencies": {
     "vite": "^5.0.0"
